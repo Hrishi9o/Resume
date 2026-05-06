@@ -157,7 +157,7 @@ setTimeout(() => {
 
 // --- 5. COPY EMAIL TO CLIPBOARD ---
 function copyEmail() {
-    const email = "hrishikeshshetty9o@gmail.com";
+    const email = "hrishikeshshetty90@gmail.com";
     navigator.clipboard.writeText(email).then(() => {
         const emailText = document.getElementById("email-text");
         const emailBtn = document.getElementById("email-btn");

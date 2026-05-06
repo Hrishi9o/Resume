@@ -132,6 +132,8 @@ a.interactive-card:hover .link-arrow { color: var(--primary); transform: transla
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 12px; font-size: 0.9rem; font-weight: 600; text-decoration: none; transition: all 0.2s; font-family: var(--font-heading); cursor: pointer; }
 .btn-primary { background: var(--primary); color: #fff; border: 1px solid var(--primary); }
 .btn-primary:hover { background: transparent; color: var(--primary); }
+.btn-secondary { background: transparent; color: var(--text-primary); border: 1px solid var(--card-border); }
+.btn-secondary:hover { border-color: var(--primary); color: var(--primary); }
 .social-pill { display: flex; align-items: center; gap: 8px; padding: 10px 16px; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; color: var(--text-primary); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: all 0.2s;}
 .social-pill:hover { border-color: var(--primary); color: var(--primary); }
 
