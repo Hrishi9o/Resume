@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hrishikesh S Shetty | Full-Stack Software Engineer & Digital Craftsman</title>
+    <title>Hrishikesh S Shetty | Digital Engineer & Full-Stack Developer</title>
     
+    <!-- Inline Monogram Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='26' fill='%23050811'/><path d='M30 25 V75 M70 25 V75 M30 50 H70' stroke='%2300b4d8' stroke-width='12' stroke-linecap='round'/><circle cx='70' cy='75' r='9' fill='%2338bdf8'/></svg>">
+
     <!-- SEO & Social Open Graph Meta Tags -->
-    <meta name="description" content="Portfolio of Hrishikesh S Shetty — Full-stack Software Engineer & ISE undergrad at Ramaiah Institute of Technology (9.65 CGPA). Creator of Get-Me-Chai, Aquajaal POS, and high-performance web/mobile platforms.">
-    <meta name="keywords" content="Hrishikesh S Shetty, Get-Me-Chai, Next.js 14, Razorpay, Flutter, Full-Stack Engineer, Ramaiah Institute of Technology, Bangalore">
+    <meta name="description" content="Portfolio of Hrishikesh S Shetty — Digital Engineer & Information Science Undergrad at Ramaiah Institute of Technology (9.65 CGPA). Builder of Get-Me-Chai, Aquajaal POS, and high-performance software systems.">
+    <meta name="keywords" content="Hrishikesh S Shetty, Software Engineer, Portfolio, Resume, Next.js, Flutter, React, Ramaiah Institute of Technology, Bangalore">
     <meta name="author" content="Hrishikesh S Shetty">
-    <meta name="theme-color" content="#f59e0b">
+    <meta name="theme-color" content="#00b4d8">
 
     <!-- Open Graph / LinkedIn / WhatsApp -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://resume-hrishi9os-projects.vercel.app/">
-    <meta property="og:title" content="Hrishikesh S Shetty | Full-Stack Software Engineer">
-    <meta property="og:description" content="Explore Get-Me-Chai (Next.js 14 Creator Crowdfunding), Aquajaal POS (Flutter Offline-First), and download my ATS-optimized resume.">
+    <meta property="og:title" content="Hrishikesh S Shetty | Digital Engineer & Full-Stack Developer">
+    <meta property="og:description" content="Explore my engineering portfolio, full-stack projects, mobile apps, and download my ATS-optimized resume.">
     <meta property="og:image" content="https://raw.githubusercontent.com/Hrishi9o/Resume/main/Gemini_Generated_Image_rbgdubrbgdubrbgd.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://resume-hrishi9os-projects.vercel.app/">
-    <meta name="twitter:title" content="Hrishikesh S Shetty | Full-Stack Software Engineer">
-    <meta name="twitter:description" content="Explore Get-Me-Chai, Aquajaal POS, and high-performance interactive web apps.">
+    <meta name="twitter:title" content="Hrishikesh S Shetty | Digital Engineer & Full-Stack Developer">
+    <meta name="twitter:description" content="Explore my engineering portfolio, full-stack projects, mobile apps, and download my ATS-optimized resume.">
     <meta name="twitter:image" content="https://raw.githubusercontent.com/Hrishi9o/Resume/main/Gemini_Generated_Image_rbgdubrbgdubrbgd.png">
 
     <!-- Stylesheets & Fonts -->
@@ -45,20 +48,19 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="30" height="30">
                   <defs>
                     <linearGradient id="navBrandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
-                      <stop offset="100%" style="stop-color:#00b4d8;stop-opacity:1" />
+                      <stop offset="0%" style="stop-color:#00b4d8;stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#0077b6;stop-opacity:1" />
                     </linearGradient>
                   </defs>
                   <rect width="100" height="100" rx="26" fill="none" stroke="url(#navBrandGrad)" stroke-width="8"/>
                   <path d="M30 25 V75 M70 25 V75 M30 50 H70" stroke="url(#navBrandGrad)" stroke-width="12" stroke-linecap="round"/>
-                  <circle cx="70" cy="75" r="9" fill="#f59e0b"/>
+                  <circle cx="70" cy="75" r="9" fill="#38bdf8"/>
                 </svg>
-                <span class="nav-logo-text">Hrishikesh<span style="color: var(--chai-amber);">.</span></span>
+                <span class="nav-logo-text">Hrishikesh<span style="color: var(--primary);">.</span></span>
             </a>
 
             <div class="nav-links">
                 <a href="#about" class="nav-link">About</a>
-                <a href="#flagship" class="nav-link nav-link-chai"><i class="fa-solid fa-mug-hot"></i> Get-Me-Chai</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#experience" class="nav-link">Experience</a>
@@ -72,7 +74,19 @@
                 <button id="theme-toggle" class="icon-btn" aria-label="Toggle Visual Theme" title="Toggle Theme">
                     <i class="fa-solid fa-moon"></i>
                 </button>
+                <button id="mobile-menu-toggle" class="icon-btn mobile-only-btn" aria-label="Toggle Mobile Menu" title="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
+        </div>
+
+        <!-- Mobile Drawer Overlay Menu -->
+        <div id="mobile-drawer" class="mobile-drawer">
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#experience" class="mobile-nav-link">Experience</a>
+            <a href="Hrishi.pdf" target="_blank" class="mobile-nav-link"><i class="fa-solid fa-file-pdf"></i> Resume PDF</a>
         </div>
     </nav>
 
@@ -80,7 +94,7 @@
     <main class="container">
         
         <!-- ===================================================================
-             HERO INTRODUCTION SECTION
+             HERO SECTION — PERSONAL RESUME IDENTITY
              =================================================================== -->
         <section id="about" class="bento-card hero-card reveal">
             <div class="card-inner hero-layout">
@@ -89,52 +103,47 @@
                         <div class="badge badge-active">
                             <span class="pulse-dot"></span> Available for Software Engineering Roles
                         </div>
-                        <div class="badge badge-chai">
-                            <i class="fa-solid fa-mug-hot"></i> Creator of Get-Me-Chai
-                        </div>
                         <div class="badge badge-primary">
-                            <i class="fa-solid fa-award"></i> 9.65 CGPA (ISE Top Performer)
+                            <i class="fa-solid fa-award"></i> 9.65 CGPA | ISE Top Performer @ RIT
+                        </div>
+                        <div class="badge badge-purple">
+                            <i class="fa-solid fa-trophy"></i> Finalist @ BLACKBOX AI Hackathon
                         </div>
                     </div>
 
                     <h1 class="hero-headline">
-                        Hi, I'm Hrishikesh. <br>
-                        <span class="gradient-text-chai">Full-Stack Architect</span> &amp; <br>
-                        <span class="gradient-text-cyan">Digital Craftsman.</span>
+                        Hi, I'm Hrishikesh S Shetty. <br>
+                        <span class="gradient-text">Engineer for Digital Ecosystems.</span>
                     </h1>
 
                     <p class="hero-description">
-                        Information Science Engineering undergraduate at <strong>Ramaiah Institute of Technology</strong> (9.65 CGPA). Architect of scalable creator fintech platforms with <strong>Next.js 14</strong>, <strong>React</strong>, and <strong>Razorpay</strong>, alongside offline-first enterprise mobile ecosystems with <strong>Flutter</strong>. Dedicated to high-fidelity user experiences and resilient cloud backends.
+                        Information Science Engineering undergraduate at <strong>Ramaiah Institute of Technology</strong> (9.65 CGPA). Architect of high-impact full-stack web platforms and offline-first mobile ecosystems. Passionate about resilient cloud backends, clean code, and intuitive user experiences.
                     </p>
 
                     <!-- Metrics Grid -->
                     <div class="metric-stats-grid">
                         <div class="stat-card">
-                            <span class="stat-number gradient-text-chai">Next.js 14</span>
-                            <span class="stat-label">Full-Stack SaaS Architecture</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-number gradient-text-cyan">9.65</span>
+                            <span class="stat-number gradient-text">9.65</span>
                             <span class="stat-label">CGPA @ RIT Bangalore</span>
                         </div>
                         <div class="stat-card">
-                            <span class="stat-number" style="color: var(--success);">Finalist</span>
+                            <span class="stat-number" style="color: var(--emerald);">Finalist</span>
                             <span class="stat-label">BLACKBOX AI Hackathon</span>
                         </div>
                         <div class="stat-card">
+                            <span class="stat-number" style="color: var(--cyan);">Next.js 14</span>
+                            <span class="stat-label">Full-Stack SaaS Architecture</span>
+                        </div>
+                        <div class="stat-card">
                             <span class="stat-number" style="color: var(--purple);">12+</span>
-                            <span class="stat-label">Active GitHub Repos</span>
+                            <span class="stat-label">Active GitHub Repositories</span>
                         </div>
                     </div>
 
                     <!-- Call To Actions -->
                     <div class="hero-cta-group">
-                        <a href="#flagship" class="btn btn-chai">
-                            <i class="fa-solid fa-mug-hot"></i> Explore Get-Me-Chai (Live)
-                        </a>
-
-                        <a href="Hrishi.pdf" download="Hrishikesh_Shetty_Resume.pdf" class="btn btn-secondary">
-                            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+                        <a href="Hrishi.pdf" download="Hrishikesh_Shetty_Resume.pdf" class="btn btn-primary">
+                            <i class="fa-solid fa-file-arrow-down"></i> Download Resume PDF
                         </a>
 
                         <button onclick="copyEmail()" class="btn btn-secondary" id="email-btn">
@@ -151,7 +160,7 @@
                     </div>
                 </div>
 
-                <!-- Avatar with Dynamic Rotating Halo -->
+                <!-- Avatar with Rotating Dynamic Halo -->
                 <div class="hero-avatar-wrapper">
                     <div class="avatar-halo"></div>
                     <img src="Gemini_Generated_Image_rbgdubrbgdubrbgd.png" alt="Hrishikesh S Shetty" class="profile-avatar">
@@ -161,324 +170,249 @@
 
 
         <!-- ===================================================================
-             FLAGSHIP HERO SHOWCASE: GET-ME-CHAI (PRIMARY FOCUS)
-             =================================================================== -->
-        <section id="flagship" class="flagship-section reveal">
-            <div class="section-head">
-                <span class="section-tag chai-tag"><i class="fa-solid fa-fire"></i> Flagship Engineering Project</span>
-                <h2 class="section-title">Get-Me-Chai Platform</h2>
-                <p class="section-subtitle">A high-performance crowdfunding and creator patronage platform engineered with Next.js 14 App Router, server-side Razorpay HMAC workflows, NextAuth OAuth 2.0, and MongoDB Atlas.</p>
-            </div>
-
-            <div class="bento-card flagship-container">
-                <div class="card-inner flagship-inner">
-                    
-                    <div class="flagship-header-row">
-                        <div class="flagship-badge-title">
-                            <div class="cup-icon-badge">
-                                <i class="fa-solid fa-mug-hot"></i>
-                            </div>
-                            <div>
-                                <span class="badge badge-chai"><i class="fa-solid fa-star"></i> Featured Full-Stack SaaS</span>
-                                <span class="badge badge-active" style="margin-left: 8px;"><i class="fa-solid fa-cloud"></i> Deployed on Vercel CDN</span>
-                            </div>
-                        </div>
-                        <div class="tags">
-                            <span class="tag tag-chai">Next.js 14</span>
-                            <span class="tag tag-chai">Razorpay API</span>
-                            <span class="tag tag-cyan">MongoDB Atlas</span>
-                            <span class="tag tag-purple">NextAuth.js</span>
-                            <span class="tag">Tailwind CSS</span>
-                        </div>
-                    </div>
-
-                    <div class="flagship-grid">
-                        
-                        <!-- Left Column: Deep Architectural Breakdown -->
-                        <div class="flagship-content-col">
-                            <h3>Creator Patronage &amp; Micro-Donations Engine</h3>
-                            <p class="flagship-lead">
-                                <strong>Get-Me-Chai</strong> empowers digital creators, developers, and artists to accept micro-patronage payments from supporters worldwide. Engineered with bank-grade security workflows, server-side cryptographic verification, and instant celebratory feedback loops.
-                            </p>
-
-                            <div class="architecture-feature-list">
-                                <div class="arch-card">
-                                    <i class="fa-solid fa-shield-halved arch-icon"></i>
-                                    <div class="arch-text">
-                                        <h5>Fintech &amp; Razorpay Gateway Integration</h5>
-                                        <p>Server-side order generation with SHA256 HMAC cryptographic checksum verification preventing client-side price manipulation or payment spoofing.</p>
-                                    </div>
-                                </div>
-
-                                <div class="arch-card">
-                                    <i class="fa-solid fa-bolt arch-icon"></i>
-                                    <div class="arch-text">
-                                        <h5>Next.js 14 App Router &amp; Server Actions</h5>
-                                        <p>Built with React 18 Server Components, lightning-fast streaming SSR, zero-layout-shift hydration, and optimistic UI updates.</p>
-                                    </div>
-                                </div>
-
-                                <div class="arch-card">
-                                    <i class="fa-solid fa-database arch-icon"></i>
-                                    <div class="arch-text">
-                                        <h5>MongoDB Atlas &amp; Aggregation Ledgers</h5>
-                                        <p>High-throughput Mongoose schemas modeling instantaneous transaction histories, dynamic supporter comments, and creator revenue leaderboards.</p>
-                                    </div>
-                                </div>
-
-                                <div class="arch-card">
-                                    <i class="fa-solid fa-user-lock arch-icon"></i>
-                                    <div class="arch-text">
-                                        <h5>NextAuth.js OAuth 2.0 Authentication</h5>
-                                        <p>Secure GitHub identity federation with persistent JWT sessions, protected creator dashboards, and customizable donation landing pages.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Live Links -->
-                            <div class="flagship-actions">
-                                <a href="https://get-me-chai-tawny-five.vercel.app/" target="_blank" class="btn btn-chai">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch Live Web App
-                                </a>
-                                <a href="https://github.com/Hrishi9o/Get-Me-Chai" target="_blank" class="btn btn-secondary">
-                                    <i class="fa-brands fa-github"></i> View GitHub Repository
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Right Column: LIVE INTERACTIVE CHAI DONATION SIMULATOR -->
-                        <div class="simulator-col">
-                            <div class="chai-simulator-card">
-                                <div class="simulator-header">
-                                    <div class="simulator-title">
-                                        <i class="fa-solid fa-sliders"></i> Interactive Patronage Sandbox
-                                    </div>
-                                    <span class="live-feed-pill">
-                                        <span class="pulse-dot"></span> Live Simulator
-                                    </span>
-                                </div>
-
-                                <p style="font-size: 0.84rem; color: var(--text-secondary); margin-bottom: 14px;">
-                                    Test the Get-Me-Chai payment and celebratory confetti loop right here:
-                                </p>
-
-                                <!-- Amount Selection Chips -->
-                                <div class="chai-amount-selector">
-                                    <div class="amount-chip active" data-amount="50">☕ 1 Chai (₹50)</div>
-                                    <div class="amount-chip" data-amount="100">☕☕ 2 Chais (₹100)</div>
-                                    <div class="amount-chip" data-amount="250">🫖 Chai Pot (₹250)</div>
-                                </div>
-
-                                <!-- Input Fields -->
-                                <div class="simulator-form">
-                                    <input type="text" id="sim-name" class="sim-input" placeholder="Your Name or Handle" value="Tech Recruiter">
-                                    <input type="text" id="sim-msg" class="sim-input" placeholder="Message of encouragement" value="Loved the architecture of Get-Me-Chai! 🚀">
-                                    
-                                    <button id="sim-send-btn" class="btn-send-chai">
-                                        <i class="fa-solid fa-mug-hot"></i> Send Chai with Confetti
-                                    </button>
-                                </div>
-
-                                <!-- Real-time Stream -->
-                                <div class="simulator-stream-box">
-                                    <div class="stream-title-row">
-                                        <span>RECENT PATRON ACTIVITY</span>
-                                        <span id="total-chais-count" style="color: var(--chai-amber); font-weight: 700;">₹7,100 Raised</span>
-                                    </div>
-
-                                    <div id="sim-stream-list" class="stream-list">
-                                        <div class="stream-item">
-                                            <div>
-                                                <span class="stream-name">Rohan Mehta</span>
-                                                <div style="font-size: 0.74rem; color: var(--text-secondary); margin-top: 2px;">"Awesome UI and instant checkout flow!"</div>
-                                            </div>
-                                            <span class="stream-amount">+₹100</span>
-                                        </div>
-                                        <div class="stream-item">
-                                            <div>
-                                                <span class="stream-name">Ananya Sharma</span>
-                                                <div style="font-size: 0.74rem; color: var(--text-secondary); margin-top: 2px;">"Big fan of the Next.js 14 architecture."</div>
-                                            </div>
-                                            <span class="stream-amount">+₹250</span>
-                                        </div>
-                                        <div class="stream-item">
-                                            <div>
-                                                <span class="stream-name">Dev Community Supporter</span>
-                                                <div style="font-size: 0.74rem; color: var(--text-secondary); margin-top: 2px;">"Keep pushing great open source work."</div>
-                                            </div>
-                                            <span class="stream-amount">+₹50</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ===================================================================
-             OTHER FEATURED PROJECTS (BENTO GRID)
+             FEATURED PROJECTS SHOWCASE (GET-ME-CHAI FOCUS #1)
              =================================================================== -->
         <section id="projects" class="reveal" style="margin-bottom: 3.5rem;">
             <div class="section-head">
-                <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Ecosystem Showcase</span>
-                <h2 class="section-title">Engineered Applications</h2>
-                <p class="section-subtitle">Production mobile systems, real-time web audio, and pixel-perfect responsive web interfaces.</p>
+                <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Portfolio of Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Selected applications spanning full-stack crowdfunding SaaS, production offline-first mobile systems, real-time web audio, and responsive interfaces.</p>
             </div>
 
-            <div class="projects-grid">
+            <div class="filter-tabs-bar">
+                <button class="filter-tab active" data-filter="all"><i class="fa-solid fa-shapes"></i> All Projects</button>
+                <button class="filter-tab" data-filter="fullstack"><i class="fa-solid fa-cloud"></i> Full-Stack SaaS</button>
+                <button class="filter-tab" data-filter="mobile"><i class="fa-solid fa-mobile-screen"></i> Mobile &amp; Offline</button>
+                <button class="filter-tab" data-filter="frontend"><i class="fa-solid fa-palette"></i> Frontend &amp; Audio</button>
+            </div>
+
+            <div class="projects-container">
                 
-                <!-- 1. Aquajaal POS -->
-                <div class="bento-card project-card reveal" data-tilt>
+                <!-- PROJECT #1: GET-ME-CHAI (FEATURED FULL-STACK SHOWCASE) -->
+                <div class="bento-card featured-showcase-card reveal fullstack" data-category="fullstack" data-tilt>
                     <div class="card-inner">
                         <div class="project-header-bar">
-                            <div class="badge badge-primary"><i class="fa-solid fa-bottle-water"></i> Offline-First POS</div>
-                            <span class="badge badge-active"><i class="fa-solid fa-circle-check"></i> Production Deploy</span>
+                            <div class="badge badge-primary">
+                                <i class="fa-solid fa-star"></i> Featured Project #1 • Full-Stack SaaS
+                            </div>
+                            <span class="badge badge-active">
+                                <i class="fa-solid fa-circle-check"></i> Live on Vercel
+                            </span>
                         </div>
 
-                        <h3 class="project-title">Aquajaal POS — Water Distribution &amp; Billing</h3>
-                        <p class="project-desc mt-2">
-                            Production Point of Sale (POS) and inventory tracker built for <strong>Yashodhar Enterprises</strong> (packaged drinking water distributor) with dual-layer persistence (IndexedDB &amp; Hive binary NoSQL) and Firebase cloud sync.
+                        <h3 class="project-title">Get-Me-Chai — Creator Patronage &amp; Crowdfunding Platform</h3>
+                        <p class="project-desc">
+                            A production-ready creator crowdfunding web application enabling digital supporters to fund creators via secure micro-donations and custom messages. Engineered with bank-grade server-side verification and dynamic creator portals.
                         </p>
 
-                        <ul class="project-bullet-list">
-                            <li><i class="fa-solid fa-check"></i> <strong>Dual Persistence:</strong> Bidirectional Firebase RTDB sync across counter PCs &amp; phones with 100% offline Hive storage.</li>
-                            <li><i class="fa-solid fa-check"></i> <strong>Indian GST Tax Invoices:</strong> Sequential format <code>YE-YYYY-MMDD-XXXX</code>, price immutability, currency amount-in-words, and UTF-8 BOM CSV / PDF sales analytics.</li>
-                            <li><i class="fa-solid fa-check"></i> <strong>Multi-Platform:</strong> Packaged as Desktop Web, PWA, and turnkey release Android APK with 15+ automated tests.</li>
-                        </ul>
+                        <!-- Architectural Highlights Grid -->
+                        <div class="architecture-feature-grid">
+                            <div class="arch-feature-box">
+                                <i class="fa-solid fa-shield-halved arch-feature-icon"></i>
+                                <div class="arch-feature-text">
+                                    <h5>Razorpay Payment Gateway</h5>
+                                    <p>Server-side order generation with HMAC-SHA256 signature verification preventing tampering or fraudulent checkouts.</p>
+                                </div>
+                            </div>
+
+                            <div class="arch-feature-box">
+                                <i class="fa-solid fa-bolt arch-feature-icon"></i>
+                                <div class="arch-feature-text">
+                                    <h5>Next.js 14 App Router &amp; React 18</h5>
+                                    <p>Server Actions, streaming SSR, zero-layout-shift hydration, and optimistic UI updates for instantaneous feedback.</p>
+                                </div>
+                            </div>
+
+                            <div class="arch-feature-box">
+                                <i class="fa-solid fa-database arch-feature-icon"></i>
+                                <div class="arch-feature-text">
+                                    <h5>MongoDB Atlas &amp; Mongoose</h5>
+                                    <p>Scalable NoSQL schemas modeling high-throughput payment records, supporter comment feeds, and dynamic leaderboards.</p>
+                                </div>
+                            </div>
+
+                            <div class="arch-feature-box">
+                                <i class="fa-solid fa-user-lock arch-feature-icon"></i>
+                                <div class="arch-feature-text">
+                                    <h5>NextAuth.js OAuth 2.0</h5>
+                                    <p>Secure GitHub identity federation with persistent JWT sessions, protected creator dashboards, and customizable donation landing pages.</p>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="tags">
-                            <span class="tag tag-cyan">Flutter</span>
-                            <span class="tag tag-cyan">Dart</span>
-                            <span class="tag">Hive (NoSQL)</span>
-                            <span class="tag">Firebase RTDB</span>
-                            <span class="tag">IndexedDB</span>
-                            <span class="tag">PWA</span>
-                            <span class="tag">Android APK</span>
+                            <span class="tag tag-cyan">Next.js 14</span>
+                            <span class="tag tag-cyan">React 18</span>
+                            <span class="tag">Razorpay API</span>
+                            <span class="tag">MongoDB Atlas</span>
+                            <span class="tag tag-indigo">NextAuth.js</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">Canvas Confetti</span>
                         </div>
 
                         <div class="project-actions-row">
-                            <a href="https://aquajaal-hrishi9os-projects.vercel.app" target="_blank" class="card-action-btn btn-primary-ghost">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Web Demo
+                            <a href="https://get-me-chai-tawny-five.vercel.app/" target="_blank" class="card-action-btn btn-primary-ghost">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Web App
                             </a>
-                            <a href="https://github.com/Hrishi9o/Aquajaal/blob/main/Aquajaal-Counter-POS.apk" target="_blank" class="card-action-btn btn-success-ghost">
-                                <i class="fa-brands fa-android"></i> Download APK
-                            </a>
-                            <a href="https://github.com/Hrishi9o/Aquajaal" target="_blank" class="card-action-btn btn-secondary-ghost">
-                                <i class="fa-brands fa-github"></i> GitHub Source
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2. Task Buddy -->
-                <div class="bento-card project-card reveal" data-tilt>
-                    <div class="card-inner">
-                        <div class="project-header-bar">
-                            <div class="badge badge-primary"><i class="fa-solid fa-mobile-screen"></i> Mobile Productivity</div>
-                            <span class="badge" style="background: rgba(139, 92, 246, 0.12); color: var(--purple); border: 1px solid rgba(139, 92, 246, 0.3);">Flutter Suite</span>
-                        </div>
-
-                        <h3 class="project-title">Task Buddy — Gamified Productivity Suite</h3>
-                        <p class="project-desc mt-2">
-                            Cross-platform mobile productivity engine with category organization, priority scheduling, local database caching, secure OTP authentication, and dynamic theme switching.
-                        </p>
-
-                        <ul class="project-bullet-list">
-                            <li><i class="fa-solid fa-check"></i> <strong>Gamification Mechanics:</strong> Interactive mini-games and reward systems integrated into daily task completion loops to boost retention.</li>
-                            <li><i class="fa-solid fa-check"></i> <strong>Clean Architecture:</strong> Decoupled state management with robust offline local persistence and OTP login security.</li>
-                        </ul>
-
-                        <div class="tags">
-                            <span class="tag tag-purple">Flutter</span>
-                            <span class="tag tag-purple">Dart</span>
-                            <span class="tag">Shared Preferences</span>
-                            <span class="tag">OTP Auth</span>
-                            <span class="tag">Material 3</span>
-                        </div>
-
-                        <div class="project-actions-row">
-                            <a href="https://github.com/Hrishi9o/Todo_List" target="_blank" class="card-action-btn btn-secondary-ghost">
+                            <a href="https://github.com/Hrishi9o/Get-Me-Chai" target="_blank" class="card-action-btn btn-secondary-ghost">
                                 <i class="fa-brands fa-github"></i> GitHub Repository
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- 3. Spotify Web Player -->
-                <div class="bento-card project-card reveal" data-tilt>
-                    <div class="card-inner">
-                        <div class="project-header-bar">
-                            <div class="badge" style="background: rgba(29, 185, 84, 0.12); color: var(--spotify); border: 1px solid rgba(29, 185, 84, 0.3);"><i class="fa-brands fa-spotify"></i> Web Audio</div>
-                            <span class="badge badge-active">Live Demo</span>
-                        </div>
+                <!-- SECONDARY PROJECTS 2-COLUMN GRID -->
+                <div class="secondary-projects-grid">
+                    
+                    <!-- 2. Aquajaal POS -->
+                    <div class="bento-card project-card reveal mobile" data-category="mobile" data-tilt>
+                        <div class="card-inner">
+                            <div class="project-header-bar">
+                                <div class="badge badge-primary"><i class="fa-solid fa-bottle-water"></i> Offline-First POS</div>
+                                <span class="badge badge-active"><i class="fa-solid fa-circle-check"></i> Production Deploy</span>
+                            </div>
 
-                        <h3 class="project-title" style="color: var(--spotify);">Spotify Web Player Clone</h3>
-                        <p class="project-desc mt-2">
-                            Responsive music streaming web player replicating Spotify's core audio experience with real-time controls, seekbar synchronization, queue management, and mobile dark mode.
-                        </p>
+                            <h3 class="project-title">Aquajaal POS — Water Distribution &amp; Billing</h3>
+                            <p class="project-desc mt-2">
+                                Production Point of Sale (POS) and inventory tracker built for <strong>Yashodhar Enterprises</strong> (packaged drinking water distributor) with dual-layer persistence (IndexedDB &amp; Hive binary NoSQL) and Firebase cloud sync.
+                            </p>
 
-                        <ul class="project-bullet-list">
-                            <li><i class="fa-solid fa-check"></i> <strong>Real-Time Audio Buffer:</strong> Built with HTML5 Web Audio API, custom scrubber math, volume modulation, and dynamic playlist loading.</li>
-                            <li><i class="fa-solid fa-check"></i> <strong>Zero Dependency:</strong> Pure Vanilla JavaScript and modern CSS Grid/Flexbox architecture.</li>
-                        </ul>
+                            <ul class="project-bullet-list">
+                                <li><i class="fa-solid fa-check"></i> <strong>Dual Persistence:</strong> Bidirectional Firebase RTDB sync across counter PCs &amp; phones with 100% offline Hive storage.</li>
+                                <li><i class="fa-solid fa-check"></i> <strong>Indian GST Tax Invoices:</strong> Sequential format <code>YE-YYYY-MMDD-XXXX</code>, price immutability, currency amount-in-words, and UTF-8 BOM CSV / PDF sales analytics.</li>
+                                <li><i class="fa-solid fa-check"></i> <strong>Turnkey Deployment:</strong> Multi-platform Flutter build supporting Desktop Web, PWA, and release Android APK with 15+ automated tests.</li>
+                            </ul>
 
-                        <div class="tags">
-                            <span class="tag" style="color: var(--spotify); border-color: rgba(29, 185, 84, 0.3);">JavaScript (ES6+)</span>
-                            <span class="tag">HTML5 Audio</span>
-                            <span class="tag">CSS3</span>
-                            <span class="tag">Web Audio API</span>
-                        </div>
+                            <div class="tags">
+                                <span class="tag tag-cyan">Flutter</span>
+                                <span class="tag tag-cyan">Dart</span>
+                                <span class="tag">Hive (NoSQL)</span>
+                                <span class="tag">Firebase RTDB</span>
+                                <span class="tag">IndexedDB</span>
+                                <span class="tag">PWA</span>
+                                <span class="tag">Android APK</span>
+                            </div>
 
-                        <div class="project-actions-row">
-                            <a href="https://spotify-pi-six-14.vercel.app/" target="_blank" class="card-action-btn btn-primary-ghost">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/Hrishi9o/Spotify" target="_blank" class="card-action-btn btn-secondary-ghost">
-                                <i class="fa-brands fa-github"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 4. Twitter / X Clone -->
-                <div class="bento-card project-card reveal" data-tilt>
-                    <div class="card-inner">
-                        <div class="project-header-bar">
-                            <div class="badge"><i class="fa-brands fa-x-twitter"></i> UI Architecture</div>
-                            <span class="badge badge-active">Live Demo</span>
-                        </div>
-
-                        <h3 class="project-title">X / Twitter Frontend Platform</h3>
-                        <p class="project-desc mt-2">
-                            Pixel-perfect frontend recreation of Twitter / X web UI built with utility-first Tailwind CSS. Replicated multi-column responsive timelines, interactive sidebars, and trending widgets.
-                        </p>
-
-                        <ul class="project-bullet-list">
-                            <li><i class="fa-solid fa-check"></i> <strong>Fluid Breakpoints:</strong> Precision mobile-first responsiveness across phone, tablet, and desktop viewports.</li>
-                            <li><i class="fa-solid fa-check"></i> <strong>Modern Styling:</strong> Utility-first CSS ensuring lightweight, zero-bloat stylesheet payloads.</li>
-                        </ul>
-
-                        <div class="tags">
-                            <span class="tag tag-cyan">Tailwind CSS</span>
-                            <span class="tag">HTML5</span>
-                            <span class="tag">CSS Grid</span>
-                            <span class="tag">Responsive UI</span>
-                        </div>
-
-                        <div class="project-actions-row">
-                            <a href="https://twitter-red.vercel.app/" target="_blank" class="card-action-btn btn-primary-ghost">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/Hrishi9o/Twitter" target="_blank" class="card-action-btn btn-secondary-ghost">
-                                <i class="fa-brands fa-github"></i> GitHub
-                            </a>
+                            <div class="project-actions-row">
+                                <a href="https://aquajaal-hrishi9os-projects.vercel.app" target="_blank" class="card-action-btn btn-primary-ghost">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Hrishi9o/Aquajaal/blob/main/Aquajaal-Counter-POS.apk" target="_blank" class="card-action-btn btn-success-ghost">
+                                    <i class="fa-brands fa-android"></i> Download APK
+                                </a>
+                                <a href="https://github.com/Hrishi9o/Aquajaal" target="_blank" class="card-action-btn btn-secondary-ghost">
+                                    <i class="fa-brands fa-github"></i> GitHub Source
+                                </a>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- 3. Task Buddy -->
+                    <div class="bento-card project-card reveal mobile" data-category="mobile" data-tilt>
+                        <div class="card-inner">
+                            <div class="project-header-bar">
+                                <div class="badge badge-primary"><i class="fa-solid fa-mobile-screen"></i> Mobile Productivity</div>
+                                <span class="badge badge-indigo">Flutter Suite</span>
+                            </div>
+
+                            <h3 class="project-title">Task Buddy — Gamified Productivity Suite</h3>
+                            <p class="project-desc mt-2">
+                                Cross-platform mobile task productivity suite with category organization, priority scheduling, local database caching, secure OTP authentication, and dynamic theme switching.
+                            </p>
+
+                            <ul class="project-bullet-list">
+                                <li><i class="fa-solid fa-check"></i> <strong>Gamification Mechanics:</strong> Interactive mini-games and reward systems integrated into daily task completion loops to boost retention.</li>
+                                <li><i class="fa-solid fa-check"></i> <strong>Clean Architecture:</strong> Decoupled state management with robust offline local persistence and OTP login security.</li>
+                            </ul>
+
+                            <div class="tags">
+                                <span class="tag tag-indigo">Flutter</span>
+                                <span class="tag tag-indigo">Dart</span>
+                                <span class="tag">Shared Preferences</span>
+                                <span class="tag">OTP Auth</span>
+                                <span class="tag">Material 3</span>
+                            </div>
+
+                            <div class="project-actions-row">
+                                <a href="https://github.com/Hrishi9o/Todo_List" target="_blank" class="card-action-btn btn-secondary-ghost">
+                                    <i class="fa-brands fa-github"></i> GitHub Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Spotify Web Player -->
+                    <div class="bento-card project-card reveal frontend" data-category="frontend" data-tilt>
+                        <div class="card-inner">
+                            <div class="project-header-bar">
+                                <div class="badge" style="background: rgba(29, 185, 84, 0.12); color: var(--spotify); border: 1px solid rgba(29, 185, 84, 0.3);"><i class="fa-brands fa-spotify"></i> Web Audio</div>
+                                <span class="badge badge-active">Live Demo</span>
+                            </div>
+
+                            <h3 class="project-title" style="color: var(--spotify);">Spotify Web Player Clone</h3>
+                            <p class="project-desc mt-2">
+                                Responsive music streaming web player replicating Spotify's core audio experience with real-time controls, seekbar scrubbing, volume modulation, queue management, and mobile dark mode.
+                            </p>
+
+                            <ul class="project-bullet-list">
+                                <li><i class="fa-solid fa-check"></i> <strong>Real-Time Audio Buffer:</strong> Built with HTML5 Web Audio API, custom scrubber math, volume modulation, and dynamic playlist loading.</li>
+                                <li><i class="fa-solid fa-check"></i> <strong>Zero Dependency:</strong> Pure Vanilla JavaScript and modern CSS Grid/Flexbox architecture.</li>
+                            </ul>
+
+                            <div class="tags">
+                                <span class="tag" style="color: var(--spotify); border-color: rgba(29, 185, 84, 0.3);">JavaScript (ES6+)</span>
+                                <span class="tag">HTML5 Audio</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Web Audio API</span>
+                            </div>
+
+                            <div class="project-actions-row">
+                                <a href="https://spotify-pi-six-14.vercel.app/" target="_blank" class="card-action-btn btn-primary-ghost">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Hrishi9o/Spotify" target="_blank" class="card-action-btn btn-secondary-ghost">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Twitter / X Clone -->
+                    <div class="bento-card project-card reveal frontend" data-category="frontend" data-tilt>
+                        <div class="card-inner">
+                            <div class="project-header-bar">
+                                <div class="badge"><i class="fa-brands fa-x-twitter"></i> UI Architecture</div>
+                                <span class="badge badge-active">Live Demo</span>
+                            </div>
+
+                            <h3 class="project-title">X / Twitter Frontend Platform</h3>
+                            <p class="project-desc mt-2">
+                                Pixel-perfect frontend recreation of Twitter / X web UI built with utility-first Tailwind CSS. Replicated multi-column responsive timelines, interactive sidebars, and trending widgets.
+                            </p>
+
+                            <ul class="project-bullet-list">
+                                <li><i class="fa-solid fa-check"></i> <strong>Fluid Breakpoints:</strong> Precision mobile-first responsiveness across phone, tablet, and desktop viewports.</li>
+                                <li><i class="fa-solid fa-check"></i> <strong>Modern Styling:</strong> Utility-first CSS ensuring lightweight, zero-bloat stylesheet payloads.</li>
+                            </ul>
+
+                            <div class="tags">
+                                <span class="tag tag-cyan">Tailwind CSS</span>
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS Grid</span>
+                                <span class="tag">Responsive UI</span>
+                            </div>
+
+                            <div class="project-actions-row">
+                                <a href="https://twitter-red.vercel.app/" target="_blank" class="card-action-btn btn-primary-ghost">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Hrishi9o/Twitter" target="_blank" class="card-action-btn btn-secondary-ghost">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -492,44 +426,44 @@
             <div class="section-head">
                 <span class="section-tag"><i class="fa-solid fa-microchip"></i> Core Competencies</span>
                 <h2 class="section-title">Technical Arsenal</h2>
-                <p class="section-subtitle">A balanced toolkit spanning full-stack frameworks, offline mobile runtimes, cloud databases, and core computer science fundamentals.</p>
+                <p class="section-subtitle">A balanced toolkit spanning full-stack web architectures, offline mobile runtimes, cloud databases, and core computer science fundamentals.</p>
             </div>
 
             <div class="skills-grid">
                 
-                <!-- Category 1: Full-Stack & Web -->
-                <div class="skill-category-card chai-spotlight-card">
+                <!-- Category 1: Languages -->
+                <div class="skill-category-card">
                     <div class="skill-card-header">
-                        <i class="fa-brands fa-react skill-card-icon" style="color: var(--chai-amber);"></i>
-                        <h4 class="skill-card-title">Full-Stack &amp; Web</h4>
+                        <i class="fa-solid fa-code skill-card-icon" style="color: var(--primary);"></i>
+                        <h4 class="skill-card-title">Languages</h4>
                     </div>
                     <div class="tags">
-                        <span class="tag tag-chai">Next.js 14</span>
-                        <span class="tag tag-chai">React.js 18</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Express.js</span>
-                        <span class="tag">JavaScript (ES6+)</span>
+                        <span class="tag tag-cyan">JavaScript (ES6+)</span>
+                        <span class="tag tag-cyan">Dart</span>
                         <span class="tag">TypeScript</span>
-                        <span class="tag">Tailwind CSS</span>
-                        <span class="tag">HTML5 / CSS3</span>
-                        <span class="tag">Canvas API</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">C / C++</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
                     </div>
                 </div>
 
-                <!-- Category 2: Mobile & Offline Systems -->
+                <!-- Category 2: Frameworks & UI -->
                 <div class="skill-category-card">
                     <div class="skill-card-header">
-                        <i class="fa-solid fa-mobile-screen-button skill-card-icon" style="color: var(--primary);"></i>
-                        <h4 class="skill-card-title">Mobile &amp; Offline Systems</h4>
+                        <i class="fa-brands fa-react skill-card-icon" style="color: var(--cyan);"></i>
+                        <h4 class="skill-card-title">Frameworks &amp; UI</h4>
                     </div>
                     <div class="tags">
-                        <span class="tag tag-cyan">Flutter</span>
-                        <span class="tag tag-cyan">Dart</span>
-                        <span class="tag">Hive (NoSQL)</span>
+                        <span class="tag tag-cyan">Next.js 14</span>
+                        <span class="tag tag-cyan">React.js 18</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Tailwind CSS</span>
                         <span class="tag">IndexedDB</span>
-                        <span class="tag">Android Studio</span>
                         <span class="tag">PWA Architecture</span>
-                        <span class="tag">Material 3</span>
+                        <span class="tag">Canvas API</span>
                     </div>
                 </div>
 
@@ -543,29 +477,29 @@
                         <span class="tag tag-purple">MongoDB Atlas</span>
                         <span class="tag tag-purple">Mongoose ORM</span>
                         <span class="tag">Firebase RTDB</span>
+                        <span class="tag">Hive (NoSQL)</span>
                         <span class="tag">MySQL</span>
                         <span class="tag">Vercel Edge</span>
                         <span class="tag">RESTful APIs</span>
-                        <span class="tag">Postman</span>
                     </div>
                 </div>
 
-                <!-- Category 4: Fintech, Auth & CS Core -->
+                <!-- Category 4: Tools, Fintech & CS Core -->
                 <div class="skill-category-card">
                     <div class="skill-card-header">
-                        <i class="fa-solid fa-lock skill-card-icon" style="color: var(--success);"></i>
-                        <h4 class="skill-card-title">Fintech, Auth &amp; CS Core</h4>
+                        <i class="fa-solid fa-shield-halved skill-card-icon" style="color: var(--emerald);"></i>
+                        <h4 class="skill-card-title">Tools, Auth &amp; CS Core</h4>
                     </div>
                     <div class="tags">
-                        <span class="tag" style="color: var(--success); border-color: rgba(16, 185, 129, 0.3);">Razorpay API</span>
-                        <span class="tag" style="color: var(--success); border-color: rgba(16, 185, 129, 0.3);">NextAuth.js</span>
+                        <span class="tag" style="color: var(--emerald); border-color: rgba(16, 185, 129, 0.3);">Razorpay API</span>
+                        <span class="tag" style="color: var(--emerald); border-color: rgba(16, 185, 129, 0.3);">NextAuth.js</span>
                         <span class="tag">OAuth 2.0</span>
                         <span class="tag">DSA</span>
                         <span class="tag">OOP</span>
                         <span class="tag">DBMS</span>
-                        <span class="tag">C / C++</span>
-                        <span class="tag">Java</span>
                         <span class="tag">Git &amp; GitHub</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Android Studio</span>
                     </div>
                 </div>
 
@@ -574,7 +508,7 @@
 
 
         <!-- ===================================================================
-             INTERACTIVE DEVELOPER TERMINAL / CLI
+             DEVELOPER CLI TERMINAL
              =================================================================== -->
         <section class="terminal-wrapper reveal">
             <div class="terminal-window">
@@ -585,17 +519,15 @@
                         <span class="term-dot green"></span>
                     </div>
                     <span class="terminal-title">guest@hrishi: ~ (bash / zsh)</span>
-                    <span style="font-size: 0.72rem; color: var(--text-muted);">Interactive CLI</span>
+                    <span style="font-size: 0.72rem; color: var(--text-muted);">Interactive Terminal</span>
                 </div>
                 <div id="term-output" class="terminal-body">
-                    <div class="term-line">Welcome to Hrishikesh's interactive terminal! 🚀</div>
-                    <div class="term-line">Type <span style="color: var(--chai-amber); font-weight: 700;">help</span> to inspect available commands (or try <span style="color: var(--chai-amber); font-weight: 700;">chai</span>, <span style="color: var(--primary); font-weight: 700;">projects</span>, <span style="color: var(--primary); font-weight: 700;">skills</span>, <span style="color: var(--primary); font-weight: 700;">contact</span>, <span style="color: var(--primary); font-weight: 700;">resume</span>).</div>
+                    <div class="term-line">Welcome to Hrishikesh's interactive developer terminal! 🚀</div>
+                    <div class="term-line">Type <span style="color: var(--primary); font-weight: 700;">help</span> to inspect commands (or try <span style="color: var(--primary); font-weight: 700;">about</span>, <span style="color: var(--primary); font-weight: 700;">projects</span>, <span style="color: var(--primary); font-weight: 700;">skills</span>, <span style="color: var(--primary); font-weight: 700;">education</span>, <span style="color: var(--primary); font-weight: 700;">contact</span>, <span style="color: var(--primary); font-weight: 700;">resume</span>).</div>
                 </div>
-                <div class="term-titlebar" style="border-top: 1px solid var(--card-border); border-bottom: none; padding: 8px 16px;">
-                    <div class="term-input-row" style="width: 100%;">
-                        <span class="term-prompt">guest@hrishi:~$</span>
-                        <input type="text" id="term-input" class="term-input" placeholder="type a command here..." autocomplete="off">
-                    </div>
+                <div class="term-input-row">
+                    <span class="term-prompt">guest@hrishi:~$</span>
+                    <input type="text" id="term-input" class="term-input" placeholder="type a command here..." autocomplete="off">
                 </div>
             </div>
         </section>
@@ -643,7 +575,7 @@
             <div class="bento-card">
                 <div class="card-inner">
                     <div class="section-head" style="margin-bottom: 1.5rem;">
-                        <span class="section-tag chai-tag"><i class="fa-solid fa-trophy"></i> Recognitions</span>
+                        <span class="section-tag"><i class="fa-solid fa-trophy"></i> Recognitions</span>
                         <h3 style="font-size: 1.4rem;">Milestones &amp; Honors</h3>
                     </div>
 
@@ -657,7 +589,7 @@
                         </div>
 
                         <div class="milestone-item">
-                            <i class="fa-solid fa-chart-line milestone-icon" style="color: var(--chai-amber);"></i>
+                            <i class="fa-solid fa-chart-line milestone-icon" style="color: var(--emerald);"></i>
                             <div class="milestone-text">
                                 <strong>9.65 CGPA Top Academic Performer</strong><br>
                                 Consistently ranked among top percentiles across the engineering cohort at RIT.
@@ -665,10 +597,10 @@
                         </div>
 
                         <div class="milestone-item">
-                            <i class="fa-solid fa-store milestone-icon" style="color: var(--success);"></i>
+                            <i class="fa-solid fa-store milestone-icon" style="color: var(--cyan);"></i>
                             <div class="milestone-text">
-                                <strong>Client Deployment — Yashodhar Enterprises</strong><br>
-                                Successfully deployed Aquajaal POS in live commercial operations with real-time cloud sync.
+                                <strong>Production Client Deployment</strong><br>
+                                Successfully engineered and deployed Yashodhar Enterprises Aquajaal POS in live commercial operations.
                             </div>
                         </div>
 
@@ -695,8 +627,8 @@
             </div>
             <div class="footer-links">
                 <a href="#about">About</a>
-                <a href="#flagship">Get-Me-Chai</a>
                 <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
                 <a href="https://github.com/Hrishi9o" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/hrishikesh-shetty-86779o/" target="_blank">LinkedIn</a>
                 <a href="Hrishi.pdf" target="_blank">Resume PDF</a>
