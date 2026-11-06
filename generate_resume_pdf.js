@@ -90,7 +90,7 @@ function generateResumePDF(outputPath) {
        .fontSize(8.3)
        .fillColor(textColor)
        .text(
-           'High-performing Information Science Engineering undergraduate (9.65 CGPA) at Ramaiah Institute of Technology with proven hands-on experience architecting production-grade, offline-first mobile applications with Flutter and scalable full-stack web platforms using Next.js 14, React, Node.js, and MongoDB. Strong foundation in data structures, Indian GST fintech workflows, payment gateways, and high-fidelity UI/UX design.',
+           'High-performing Information Science Engineering undergraduate (9.65 CGPA) at Ramaiah Institute of Technology with proven hands-on experience architecting full-stack web platforms using Next.js 14, React, Node.js, and MongoDB, alongside production offline-first mobile applications with Flutter. Strong background in Razorpay fintech integrations, HMAC cryptographic validations, NoSQL/SQL modeling, and high-fidelity UI/UX design.',
            left, doc.y, { align: 'justify', lineGap: 1.5, width: contentWidth }
        );
 
@@ -135,11 +135,11 @@ function generateResumePDF(outputPath) {
         doc.y = y + 10.5;
     }
 
-    renderSkillRow('Languages', 'Dart, JavaScript (ES6+), C, C++, Java, TypeScript, SQL, HTML5, CSS3');
-    renderSkillRow('Frameworks & UI', 'Flutter, Next.js 14, React.js, Node.js, Tailwind CSS, IndexedDB, Web Audio API');
-    renderSkillRow('Databases & Cloud', 'MongoDB (Atlas & Mongoose), Hive (NoSQL), MySQL, Firebase Realtime Database');
-    renderSkillRow('Tools & Platforms', 'Git, GitHub, VS Code, Android Studio, Razorpay API, NextAuth.js, Vercel, PWA');
-    renderSkillRow('CS Fundamentals', 'Data Structures & Algorithms (DSA), OOP, DBMS, RESTful APIs, Offline-First Architecture');
+    renderSkillRow('Languages', 'JavaScript (ES6+), Dart, TypeScript, Java, C, C++, SQL, HTML5, CSS3');
+    renderSkillRow('Frameworks & UI', 'Next.js 14, React.js, Node.js, Flutter, Tailwind CSS, IndexedDB, Web Audio API');
+    renderSkillRow('Databases & Cloud', 'MongoDB (Atlas & Mongoose), Firebase RTDB, Hive (NoSQL), MySQL, Vercel');
+    renderSkillRow('Tools & APIs', 'Razorpay API, NextAuth.js, Git, GitHub, VS Code, Android Studio, Postman, PWA');
+    renderSkillRow('CS Fundamentals', 'Data Structures & Algorithms (DSA), OOP, DBMS, RESTful APIs, Secure Web Auth');
 
     // --- FEATURED PROJECTS ---
     addSectionHeader('Featured Projects');
@@ -174,26 +174,26 @@ function generateResumePDF(outputPath) {
         doc.y = doc.y + 1.5;
     }
 
-    // 1. Aquajaal POS
+    // 1. Get-Me-Chai (FLAGSHIP FOCUS #1)
+    renderProjectHeader(
+        'Get-Me-Chai — Creator Crowdfunding & Patronage Web Platform',
+        'Next.js 14, React 18, Razorpay API, MongoDB Atlas, Mongoose, NextAuth, Tailwind CSS',
+        [{ label: 'Live App', url: 'https://get-me-chai-tawny-five.vercel.app/' }, { label: 'GitHub', url: 'https://github.com/Hrishi9o/Get-Me-Chai' }]
+    );
+    renderBullet('Architected a full-stack creator patronage platform enabling fans to support creators via secure Razorpay payment gateway integration with server-side HMAC-SHA256 signature verification and webhooks.');
+    renderBullet('Integrated NextAuth.js for OAuth 2.0 authentication, dynamic creator profile dashboards, and responsive glassmorphic UI using Tailwind CSS with celebratory particle physics animations.');
+    renderBullet('Engineered high-throughput MongoDB Atlas schemas with Mongoose models for instant transaction ledgers, real-time patron comments, and creator revenue aggregation pipelines.');
+
+    // 2. Aquajaal POS
+    doc.y += 2;
     renderProjectHeader(
         'Aquajaal POS — Drinking Water Distribution & Billing System',
         'Flutter, Dart, Hive (NoSQL), Firebase RTDB, IndexedDB, PWA, Android APK',
         [{ label: 'Web Demo', url: 'https://aquajaal-hrishi9os-projects.vercel.app' }, { label: 'GitHub', url: 'https://github.com/Hrishi9o/Aquajaal' }]
     );
-    renderBullet('Engineered a production offline-first Point of Sale (POS) and inventory tracker for Yashodhar Enterprises (packaged drinking water distributor) supporting desktop web, PWA, and Android APK.');
+    renderBullet('Engineered a production offline-first Point of Sale (POS) and inventory tracker for Yashodhar Enterprises (packaged drinking water distributor) supporting desktop web, PWA, and release Android APK.');
     renderBullet('Architected bidirectional cloud synchronization with Firebase RTDB across multiple counter terminals while preserving 100% offline persistence using local binary Hive NoSQL storage.');
     renderBullet('Implemented Indian GST tax invoices (YE-YYYY-MMDD-XXXX), price immutability, automated currency amount-in-words conversion, and UTF-8 BOM CSV/PDF analytics with 15+ automated tests.');
-
-    // 2. Get-Me-Chai
-    doc.y += 2;
-    renderProjectHeader(
-        'Get-Me-Chai — Creator Crowdfunding & Patronage Platform',
-        'Next.js 14, React 18, Razorpay API, MongoDB Atlas, Mongoose, NextAuth, Tailwind CSS',
-        [{ label: 'Live App', url: 'https://get-me-chai-tawny-five.vercel.app/' }, { label: 'GitHub', url: 'https://github.com/Hrishi9o/Get-Me-Chai' }]
-    );
-    renderBullet('Built a full-stack creator patronage web application enabling supporters to fund creators via secure Razorpay payment gateway integration with server-side HMAC signature verification.');
-    renderBullet('Configured NextAuth.js for OAuth authentication, customizable creator donation portals, and glassmorphic UI using Tailwind CSS with celebratory particle confetti animations.');
-    renderBullet('Designed optimized MongoDB Atlas schemas with Mongoose models for instantaneous payment ledgers, real-time patron comments, and creator revenue analytics.');
 
     // 3. Task Buddy
     doc.y += 2;
@@ -225,7 +225,7 @@ function generateResumePDF(outputPath) {
     addSectionHeader('Extracurricular Activities & Interests');
     renderBullet('Leadership & Activities: Active participant in coding hackathons; School Marching Band Vocalist & live performer.');
     renderBullet('Languages: English (Professional Working Proficiency), Hindi, Kannada, Tulu (Native).');
-    renderBullet('Interests: Distributed Systems, Offline-First Mobile Architectures, UI/UX Interaction Design, Biking & Travel.');
+    renderBullet('Interests: Full-Stack Web Architecture, Payment Systems, Offline-First Mobile Engineering, UI/UX Interaction Design.');
 
     doc.end();
 
@@ -238,7 +238,7 @@ function generateResumePDF(outputPath) {
 const targetPath = path.join(__dirname, 'Hrishi.pdf');
 generateResumePDF(targetPath)
     .then(() => {
-        console.log('Successfully generated refined Hrishi.pdf at:', targetPath);
+        console.log('Successfully re-generated Hrishi.pdf with Get-Me-Chai as flagship focus at:', targetPath);
     })
     .catch(err => {
         console.error('Error generating PDF:', err);
