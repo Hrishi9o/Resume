@@ -100,6 +100,15 @@ html {
     font-size: 16px;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
 body {
     background-color: var(--bg-base);
     color: var(--text-primary);
@@ -208,19 +217,29 @@ body.light-mode .gradient-title {
     align-items: center;
 }
 
-.nav-brand {
+.nav-brand,
+.nav-logo-group {
     display: flex;
     align-items: center;
     gap: 10px;
-    text-decoration: none;
-    color: var(--text-primary);
+    text-decoration: none !important;
+    color: var(--text-primary) !important;
 }
 
-.nav-brand-title {
+.nav-brand:visited,
+.nav-logo-group:visited {
+    color: var(--text-primary) !important;
+    text-decoration: none !important;
+}
+
+.nav-brand-title,
+.nav-logo-text {
     font-family: var(--font-heading);
     font-weight: 800;
     font-size: 1.15rem;
     letter-spacing: -0.5px;
+    color: var(--text-primary) !important;
+    text-decoration: none !important;
 }
 
 .nav-links {
