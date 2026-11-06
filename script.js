@@ -33,15 +33,14 @@ document.querySelectorAll('.bento-card').forEach(card => {
         card.style.setProperty("--mouse-x", `${x}px`);
         card.style.setProperty("--mouse-y", `${y}px`);
 
-        // 3D Tilt calculation (subtle effect)
-        // Disable on mobile for performance and UX
-        if(window.innerWidth > 768) {
+        // 3D Tilt calculation (subtle effect on desktop)
+        if (window.innerWidth > 768) {
             const centerX = rect.width / 2;
             const centerY = rect.height / 2;
-            const rotateX = ((y - centerY) / centerY) * -4; // Max rotation 4deg
-            const rotateY = ((x - centerX) / centerX) * 4;
+            const rotateX = ((y - centerY) / centerY) * -3.5; // Max rotation 3.5deg
+            const rotateY = ((x - centerX) / centerX) * 3.5;
             
-            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
         }
     });
 
@@ -67,14 +66,13 @@ class Particle {
     constructor() {
         this.x = Math.random() * w;
         this.y = Math.random() * h;
-        this.vx = (Math.random() - 0.5) * 0.8;
-        this.vy = (Math.random() - 0.5) * 0.8;
+        this.vx = (Math.random() - 0.5) * 0.7;
+        this.vy = (Math.random() - 0.5) * 0.7;
         this.radius = Math.random() * 2 + 1;
     }
     update() {
         this.x += this.vx;
         this.y += this.vy;
-        // Bounce off edges
         if (this.x < 0 || this.x > w) this.vx *= -1;
         if (this.y < 0 || this.y > h) this.vy *= -1;
     }
@@ -87,32 +85,32 @@ class Particle {
 }
 
 // Initialize particles
-for (let i = 0; i < 70; i++) particles.push(new Particle());
+for (let i = 0; i < 65; i++) particles.push(new Particle());
 
 function animate() {
     ctx.clearRect(0, 0, w, h);
     
-    // Check current theme to determine particle colors
     const isLight = body.classList.contains('light-mode');
-    const pColor = isLight ? 'rgba(0, 180, 216, 0.4)' : 'rgba(0, 180, 216, 0.6)';
+    const pColor = isLight ? 'rgba(0, 180, 216, 0.45)' : 'rgba(0, 180, 216, 0.55)';
     
     particles.forEach(p => {
         p.update();
         p.draw(pColor);
     });
 
-    // Draw connecting lines
+    // Draw connecting lines between particles
     for (let i = 0; i < particles.length; i++) {
-        for (let j = i; j < particles.length; j++) {
+        for (let j = i + 1; j < particles.length; j++) {
             const dx = particles[i].x - particles[j].x;
             const dy = particles[i].y - particles[j].y;
             const dist = Math.sqrt(dx * dx + dy * dy);
             
-            if (dist < 130) {
+            if (dist < 125) {
                 ctx.beginPath();
-                // Line opacity fades based on distance
-                const alpha = 1 - (dist / 130);
-                ctx.strokeStyle = isLight ? `rgba(0, 180, 216, ${alpha * 0.3})` : `rgba(0, 180, 216, ${alpha * 0.2})`;
+                const alpha = 1 - (dist / 125);
+                ctx.strokeStyle = isLight 
+                    ? `rgba(0, 180, 216, ${alpha * 0.25})` 
+                    : `rgba(0, 180, 216, ${alpha * 0.18})`;
                 ctx.lineWidth = 1;
                 ctx.moveTo(particles[i].x, particles[i].y);
                 ctx.lineTo(particles[j].x, particles[j].y);
@@ -125,18 +123,17 @@ function animate() {
 animate();
 
 // --- 4. SCROLL REVEAL ANIMATIONS ---
-const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+const observerOptions = { threshold: 0.08, rootMargin: "0px 0px -40px 0px" };
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('active');
             
-            // Handle staggered children if they exist
             const staggerItems = entry.target.querySelectorAll('.stagger-item');
             if (staggerItems.length > 0) {
                 staggerItems.forEach((item, index) => {
-                    setTimeout(() => item.classList.add('active'), index * 150);
+                    setTimeout(() => item.classList.add('active'), index * 120);
                 });
             }
             observer.unobserve(entry.target);
@@ -146,33 +143,34 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Trigger immediate reveal for top element on load
+// Trigger reveal for top hero element on load
 setTimeout(() => {
     const hero = document.getElementById('about');
-    hero.classList.add('active');
-    hero.querySelectorAll('.stagger-item').forEach((item, index) => {
-        setTimeout(() => item.classList.add('active'), index * 150);
-    });
-}, 100);
+    if (hero) {
+        hero.classList.add('active');
+        hero.querySelectorAll('.stagger-item').forEach((item, index) => {
+            setTimeout(() => item.classList.add('active'), index * 120);
+        });
+    }
+}, 80);
 
 // --- 5. COPY EMAIL TO CLIPBOARD ---
 function copyEmail() {
-    const email = "hrishikeshshetty90@gmail.com";
+    const email = "hrishikeshshetty9o@gmail.com";
     navigator.clipboard.writeText(email).then(() => {
         const emailText = document.getElementById("email-text");
         const emailBtn = document.getElementById("email-btn");
         
-        // Change text to show success
+        const originalText = emailText.innerText;
         emailText.innerText = "Copied!";
-        emailBtn.style.backgroundColor = "#10b981"; // Change to green
+        emailBtn.style.backgroundColor = "#10b981";
         emailBtn.style.borderColor = "#10b981";
         
-        // Reset back to normal after 2 seconds
         setTimeout(() => {
-            emailText.innerText = "Email Me";
+            emailText.innerText = originalText;
             emailBtn.style.backgroundColor = ""; 
             emailBtn.style.borderColor = "";
-        }, 2000);
+        }, 2200);
     }).catch(err => {
         console.error('Failed to copy text: ', err);
     });

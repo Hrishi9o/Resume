@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hrishikesh S Shetty | Digital Engineer</title>
+    <title>Hrishikesh S Shetty | Digital Engineer & Full-Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="dark-mode"> <canvas id="bg-canvas"></canvas>
+<body class="dark-mode">
+    <canvas id="bg-canvas"></canvas>
 
     <nav class="glass-nav">
         <div class="nav-content">
-            <div class="flex-align" style="gap: 8px;">
+            <div class="flex-align" style="gap: 10px;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="28" height="28">
                   <defs>
                     <linearGradient id="gradNode" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -30,6 +31,8 @@
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="Hrishi.pdf" target="_blank">Resume PDF</a>
                 <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
                     <i class="fa-solid fa-moon"></i>
                 </button>
@@ -39,32 +42,50 @@
 
     <main class="container">
         
+        <!-- HERO SECTION -->
         <section id="about" class="bento-card col-span-3 reveal" data-tilt>
             <div class="card-inner flex-row">
                 <div class="hero-content">
-                    <div class="status-badge mb-6">
-                        <span class="status-dot"></span> Available for work
+                    <div class="flex-align mb-4" style="flex-wrap: wrap; gap: 10px;">
+                        <div class="status-badge">
+                            <span class="status-dot"></span> Available for work
+                        </div>
+                        <div class="project-badge production">
+                            <i class="fa-solid fa-award"></i> 9.65 CGPA | ISE Top Performer @ RIT
+                        </div>
                     </div>
+
                     <h1 class="hero-title"><span class="name-text">Hi, I'm Hrishikesh.</span> <span class="power-text">Engineer for digital ecosystems.</span></h1>
+                    
                     <p class="hero-subtitle">
-                        An <strong class="accent-text">Information Science Engineering student</strong> with a strong foundation in software development and mobile ecosystems. Proven ability to build responsive web applications and scalable Flutter interfaces. Passionate about crafting clean, efficient code and high-fidelity user experiences.
+                        An <strong class="accent-text">Information Science Engineering undergraduate</strong> at Ramaiah Institute of Technology with proven expertise in architecting production-grade, offline-first mobile applications with Flutter and modern full-stack web platforms using Next.js 14, React, and MongoDB. Passionate about building resilient software architectures, clean code, and high-fidelity user experiences.
                     </p>
-                    <div class="hero-info flex-align mt-4">
+
+                    <div class="quick-stats mb-4">
+                        <span class="stat-pill"><i class="fa-solid fa-graduation-cap"></i> 9.65 CGPA (RIT ISE)</span>
+                        <span class="stat-pill"><i class="fa-solid fa-trophy"></i> Finalist @ BLACKBOX AI</span>
+                        <span class="stat-pill"><i class="fa-solid fa-box-open"></i> Production Water POS (Live)</span>
+                        <span class="stat-pill"><i class="fa-brands fa-react"></i> Next.js 14 Full-Stack</span>
+                    </div>
+
+                    <div class="hero-info flex-align mt-2">
                         <span class="info-item"><i class="fa-solid fa-location-dot"></i> Bangalore, India</span>
                         <span class="info-item"><i class="fa-solid fa-phone"></i> +91-8217482716</span>
+                        <span class="info-item"><i class="fa-solid fa-envelope"></i> hrishikeshshetty9o@gmail.com</span>
                     </div>
+
                     <div class="hero-actions flex-align mt-6 stagger-group">
                         <button onclick="copyEmail()" class="btn btn-primary stagger-item" id="email-btn">
                             <i class="fa-solid fa-envelope"></i> <span id="email-text">Email Me</span>
                         </button>
                         
                         <a href="Hrishi.pdf" download="Hrishikesh_Shetty_Resume.pdf" class="btn btn-secondary stagger-item">
-                            <i class="fa-solid fa-file-pdf"></i> Resume
+                            <i class="fa-solid fa-file-pdf"></i> Download Resume
                         </a>
 
                         <div class="social-links flex-align stagger-item">
                             <a href="https://github.com/Hrishi9o" target="_blank" class="social-pill"><i class="fa-brands fa-github"></i> GitHub</a>
-                            <a href="https://linkedin.com/in/hrishikesh-shetty-5976342a9" target="_blank" class="social-pill"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/hrishikesh-shetty-86779o/" target="_blank" class="social-pill"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                         </div>
                     </div>
                 </div>
@@ -73,48 +94,69 @@
         </section>
 
         <div class="bento-grid mt-6">
+            
+            <!-- TECHNICAL SKILLS -->
             <div id="skills" class="bento-card col-span-2 reveal" data-tilt>
                 <div class="card-inner">
                     <div class="card-header space-between">
                         <div class="flex-align"><i class="fa-solid fa-code icon-primary"></i><h2>Technical Arsenal</h2></div>
+                        <span class="project-badge">Languages • Frameworks • Systems</span>
                     </div>
                     <div class="skills-layout mt-4 stagger-group">
                         <div class="skill-col stagger-item">
-                            <span class="skill-label">Languages & Tools</span>
+                            <span class="skill-label">Languages</span>
                             <div class="tags">
-                                <span class="tag">C / C++</span>
-                                <span class="tag">Java</span>
-                                <span class="tag">JavaScript (ES6+)</span>
                                 <span class="tag">Dart</span>
-                                <span class="tag">Git & GitHub</span>
-                                <span class="tag">VS Code</span>
-                                <span class="tag">Android Studio</span>
-                            </div>
-                        </div>
-                        <div class="skill-col stagger-item">
-                            <span class="skill-label">Frameworks</span>
-                            <div class="tags">
-                                <span class="tag">Flutter</span>
-                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">JavaScript (ES6+)</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">C / C++</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">SQL</span>
                                 <span class="tag">HTML5</span>
                                 <span class="tag">CSS3</span>
                             </div>
                         </div>
                         <div class="skill-col stagger-item">
-                            <span class="skill-label">Backend & Core</span>
+                            <span class="skill-label">Frameworks & UI</span>
                             <div class="tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Next.js 14</span>
+                                <span class="tag">React.js</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">IndexedDB</span>
+                                <span class="tag">PWA</span>
+                                <span class="tag">Web Audio API</span>
+                            </div>
+                        </div>
+                        <div class="skill-col stagger-item">
+                            <span class="skill-label">Databases & Cloud</span>
+                            <div class="tags">
+                                <span class="tag">MongoDB Atlas</span>
+                                <span class="tag">Mongoose</span>
+                                <span class="tag">Hive (NoSQL)</span>
                                 <span class="tag">MySQL</span>
-                                <span class="tag">MongoDB</span>
+                                <span class="tag">Firebase RTDB</span>
+                            </div>
+                        </div>
+                        <div class="skill-col stagger-item">
+                            <span class="skill-label">Tools & Core CS</span>
+                            <div class="tags">
+                                <span class="tag">Razorpay API</span>
+                                <span class="tag">NextAuth.js</span>
+                                <span class="tag">Git & GitHub</span>
+                                <span class="tag">Android Studio</span>
+                                <span class="tag">VS Code</span>
                                 <span class="tag">DSA</span>
-                                <span class="tag">DBMS</span>
                                 <span class="tag">OOP</span>
+                                <span class="tag">DBMS</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="bento-card col-span-1 reveal" data-tilt>
+            <!-- EDUCATION -->
+            <div id="education" class="bento-card col-span-1 reveal" data-tilt>
                 <div class="card-inner">
                     <div class="card-header space-between">
                         <div class="flex-align"><i class="fa-solid fa-graduation-cap icon-primary"></i><h2>Education</h2></div>
@@ -123,106 +165,282 @@
                         <div class="timeline-item stagger-item">
                             <div class="timeline-dot"></div>
                             <h4>B.E. Information Science</h4>
-                            <p>Ramaiah Institute of Tech</p>
-                            <span class="timeline-date">2024 - 2028 | CGPA: 9.65</span>
+                            <p>Ramaiah Institute of Technology</p>
+                            <span class="timeline-date">2024 - 2028 | CGPA: 9.65 (Top Performer)</span>
                         </div>
                         <div class="timeline-item mt-4 stagger-item">
                             <div class="timeline-dot"></div>
-                            <h4>Pre-University (Class XII)</h4>
+                            <h4>Pre-University (Class XII - PCMB)</h4>
                             <p>Jnana Sudha PU College</p>
-                            <span class="timeline-date">2022 - 2024 | 97.3%</span>
+                            <span class="timeline-date">2022 - 2024 | Aggregate: 97.3%</span>
                         </div>
                         <div class="timeline-item mt-4 stagger-item">
                             <div class="timeline-dot"></div>
-                            <h4>Secondary Ed (Class X)</h4>
-                            <p>Don Bosco English Medium</p>
-                            <span class="timeline-date">2022 | 90.67%</span>
+                            <h4>Secondary Education (Class X)</h4>
+                            <p>Don Bosco English Medium School</p>
+                            <span class="timeline-date">2022 | Aggregate: 90.67%</span>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- FLAGSHIP PROJECT 1: AQUAJAAL POS (2 COLS) -->
             <div id="projects" class="bento-card col-span-2 reveal" data-tilt>
                 <div class="card-inner flex-col flex-grow">
                     <div class="card-header space-between flex-align">
-                        <div class="flex-align"><i class="fa-solid fa-mobile-screen-button icon-primary"></i><h2>Task Buddy</h2></div>
-                    </div>
-                    <p class="project-desc mt-3">A full-featured productivity suite with category management and local database persistence. Engineered a secure OTP-based authentication flow, a dynamic theme-switching engine, and integrated mini-games to boost user engagement.</p>
-                    <div class="card-footer mt-auto pt-4">
-                        <div class="tags"><span class="tag tech-tag">Flutter</span><span class="tag tech-tag">Dart</span><span class="tag tech-tag">Shared Preferences</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <a href="https://spotify-pi-six-14.vercel.app/" target="_blank" class="bento-card col-span-1 interactive-card reveal" data-tilt>
-                <div class="card-inner flex-col flex-grow">
-                    <div class="card-header space-between flex-align">
-                        <div class="flex-align"><i class="fa-brands fa-spotify text-green"></i><h2 class="text-green">Spotify Clone</h2></div>
-                        <i class="fa-solid fa-arrow-right link-arrow"></i>
-                    </div>
-                    <p class="project-desc mt-3">Responsive music streaming interface built with Vanilla JS. Features real-time audio controls, seekbar synchronization, and mobile-first dark-mode design.</p>
-                    <div class="card-footer mt-auto pt-4">
-                        <div class="tags"><span class="tag tech-tag">JavaScript</span><span class="tag tech-tag">HTML5 / CSS3</span></div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://twitter-red.vercel.app/" target="_blank" class="bento-card col-span-1 interactive-card reveal" data-tilt>
-                <div class="card-inner flex-col flex-grow">
-                    <div class="card-header space-between flex-align">
-                        <div class="flex-align"><i class="fa-brands fa-x-twitter"></i><h2>X (Twitter Clone)</h2></div>
-                        <i class="fa-solid fa-arrow-right link-arrow"></i>
-                    </div>
-                    <p class="project-desc mt-3">High-fidelity frontend clone of Twitter using utility-first Tailwind CSS. Replicated complex tweet layouts, sidebars, and trending widgets with pixel precision.</p>
-                    <div class="card-footer mt-auto pt-4">
-                        <div class="tags"><span class="tag tech-tag">Tailwind CSS</span><span class="tag tech-tag">HTML5</span></div>
-                    </div>
-                </div>
-            </a>
-
-            <div class="bento-card col-span-1 reveal" data-tilt>
-                <div class="card-inner flex-col flex-grow">
-                    <div class="card-header space-between">
-                        <div class="flex-align"><i class="fa-solid fa-trophy icon-primary"></i><h2>Milestones</h2></div>
-                    </div>
-                    <div class="list-layout mt-4 stagger-group">
-                        <div class="list-item stagger-item border-l-blue" style="padding: 12px; gap: 12px;">
-                            <i class="fa-solid fa-robot text-blue" style="font-size: 1rem;"></i>
-                            <p style="font-size: 0.85rem;"><strong>Finalist</strong> - BLACKBOX AI at RIT TechFest 2026.</p>
+                        <div class="flex-align">
+                            <i class="fa-solid fa-bottle-water text-blue"></i>
+                            <h2>Aquajaal POS — Drinking Water Distribution System</h2>
                         </div>
-                        <div class="list-item stagger-item border-l-green mt-3" style="padding: 12px; gap: 12px;">
-                            <i class="fa-solid fa-chart-line text-green" style="font-size: 1rem;"></i>
-                            <p style="font-size: 0.85rem;"><strong>9.65 CGPA</strong> - Top Academic Performer in ISE.</p>
-                        </div>
-                        <div class="list-item stagger-item border-l-purple mt-3" style="padding: 12px; gap: 12px;">
-                            <i class="fa-solid fa-music text-purple" style="font-size: 1rem;"></i>
-                            <p style="font-size: 0.85rem;"><strong>Vocalist</strong> - Marching band & live performances.</p>
+                        <span class="project-badge production"><i class="fa-solid fa-circle-check"></i> Production Deploy</span>
+                    </div>
+
+                    <p class="project-desc mt-3">
+                        A production-grade, offline-first Point of Sale (POS), inventory tracker, and sales analytics system developed for <strong>Yashodhar Enterprises</strong> (authorized packaged drinking water distributor). Engineered with a single Flutter codebase supporting desktop web, PWA, and release Android APK.
+                    </p>
+
+                    <ul class="project-features">
+                        <li><i class="fa-solid fa-check"></i> <strong>Dual Persistence & Cloud Sync:</strong> Bidirectional cloud sync with Firebase RTDB across counter PCs and mobile phones while retaining 100% offline local binary Hive storage.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Indian GST Compliant:</strong> Unique sequential invoice generation (<code>YE-YYYY-MMDD-XXXX</code>), price immutability, automated currency amount-in-words conversion, and UTF-8 BOM CSV / PDF sales analytics.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Enterprise Quality:</strong> Real-time inventory audit logs, low-stock threshold alerts, and 15+ automated end-to-end integration tests.</li>
+                    </ul>
+
+                    <div class="project-actions">
+                        <a href="https://aquajaal-hrishi9os-projects.vercel.app" target="_blank" class="card-btn card-btn-primary">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Web App
+                        </a>
+                        <a href="https://github.com/Hrishi9o/Aquajaal/blob/main/Aquajaal-Counter-POS.apk" target="_blank" class="card-btn card-btn-success">
+                            <i class="fa-brands fa-android"></i> Download APK
+                        </a>
+                        <a href="https://github.com/Hrishi9o/Aquajaal" target="_blank" class="card-btn card-btn-secondary">
+                            <i class="fa-brands fa-github"></i> GitHub Source
+                        </a>
+                    </div>
+
+                    <div class="card-footer mt-auto pt-4">
+                        <div class="tags">
+                            <span class="tag tech-tag">Flutter</span>
+                            <span class="tag tech-tag">Dart</span>
+                            <span class="tag tech-tag">Hive (NoSQL)</span>
+                            <span class="tag tech-tag">Firebase RTDB</span>
+                            <span class="tag tech-tag">IndexedDB</span>
+                            <span class="tag tech-tag">PWA</span>
+                            <span class="tag tech-tag">Android APK</span>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- FLAGSHIP PROJECT 2: GET-ME-CHAI (1 COL) -->
+            <div class="bento-card col-span-1 reveal" data-tilt>
+                <div class="card-inner flex-col flex-grow">
+                    <div class="card-header space-between flex-align">
+                        <div class="flex-align">
+                            <i class="fa-solid fa-mug-hot text-purple"></i>
+                            <h2>Get-Me-Chai</h2>
+                        </div>
+                        <span class="project-badge fullstack">Next.js 14 SaaS</span>
+                    </div>
+
+                    <p class="project-desc mt-3">
+                        Full-stack creator patronage and donation web application allowing fans to fund creators via digital micro-donations and custom supporter messages.
+                    </p>
+
+                    <ul class="project-features">
+                        <li><i class="fa-solid fa-check"></i> <strong>Razorpay Gateway:</strong> Server-side order creation and cryptographic HMAC signature validation.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>NextAuth & OAuth:</strong> Creator landing pages, dynamic profile customization, and celebratory canvas particle confetti.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>MongoDB Atlas:</strong> High-throughput transaction ledgers and real-time supporter leaderboards.</li>
+                    </ul>
+
+                    <div class="project-actions">
+                        <a href="https://get-me-chai-tawny-five.vercel.app/" target="_blank" class="card-btn card-btn-primary">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live App
+                        </a>
+                        <a href="https://github.com/Hrishi9o/Get-Me-Chai" target="_blank" class="card-btn card-btn-secondary">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+
+                    <div class="card-footer mt-auto pt-4">
+                        <div class="tags">
+                            <span class="tag tech-tag">Next.js 14</span>
+                            <span class="tag tech-tag">React</span>
+                            <span class="tag tech-tag">Razorpay API</span>
+                            <span class="tag tech-tag">MongoDB</span>
+                            <span class="tag tech-tag">NextAuth</span>
+                            <span class="tag tech-tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 3: TASK BUDDY (1 COL) -->
+            <div class="bento-card col-span-1 reveal" data-tilt>
+                <div class="card-inner flex-col flex-grow">
+                    <div class="card-header space-between flex-align">
+                        <div class="flex-align">
+                            <i class="fa-solid fa-mobile-screen-button icon-primary"></i>
+                            <h2>Task Buddy</h2>
+                        </div>
+                        <span class="project-badge">Mobile App</span>
+                    </div>
+
+                    <p class="project-desc mt-3">
+                        Cross-platform mobile productivity engine with category management, local database caching, secure OTP authentication, and dynamic theme switching.
+                    </p>
+
+                    <ul class="project-features">
+                        <li><i class="fa-solid fa-check"></i> Integrated interactive mini-games to boost user engagement and daily retention.</li>
+                        <li><i class="fa-solid fa-check"></i> Clean architecture state management for responsive mobile workflows.</li>
+                    </ul>
+
+                    <div class="project-actions">
+                        <a href="https://github.com/Hrishi9o/Todo_List" target="_blank" class="card-btn card-btn-secondary">
+                            <i class="fa-brands fa-github"></i> GitHub Source
+                        </a>
+                    </div>
+
+                    <div class="card-footer mt-auto pt-4">
+                        <div class="tags">
+                            <span class="tag tech-tag">Flutter</span>
+                            <span class="tag tech-tag">Dart</span>
+                            <span class="tag tech-tag">Shared Preferences</span>
+                            <span class="tag tech-tag">OTP Auth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 4: SPOTIFY CLONE (1 COL) -->
+            <div class="bento-card col-span-1 reveal" data-tilt>
+                <div class="card-inner flex-col flex-grow">
+                    <div class="card-header space-between flex-align">
+                        <div class="flex-align">
+                            <i class="fa-brands fa-spotify text-spotify"></i>
+                            <h2 class="text-spotify">Spotify Clone</h2>
+                        </div>
+                        <span class="project-badge">Web Audio</span>
+                    </div>
+
+                    <p class="project-desc mt-3">
+                        Responsive music streaming web app replicating Spotify. Features custom audio playback controls, seekbar synchronization, and mobile-first dark styling.
+                    </p>
+
+                    <ul class="project-features">
+                        <li><i class="fa-solid fa-check"></i> Real-time HTML5 audio buffer management, volume control, and playlist queueing.</li>
+                        <li><i class="fa-solid fa-check"></i> Pure Vanilla JavaScript implementation with zero heavy dependencies.</li>
+                    </ul>
+
+                    <div class="project-actions">
+                        <a href="https://spotify-pi-six-14.vercel.app/" target="_blank" class="card-btn card-btn-primary">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Hrishi9o/Spotify" target="_blank" class="card-btn card-btn-secondary">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+
+                    <div class="card-footer mt-auto pt-4">
+                        <div class="tags">
+                            <span class="tag tech-tag">JavaScript (ES6+)</span>
+                            <span class="tag tech-tag">HTML5 Audio</span>
+                            <span class="tag tech-tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 5: TWITTER CLONE (1 COL) -->
+            <div class="bento-card col-span-1 reveal" data-tilt>
+                <div class="card-inner flex-col flex-grow">
+                    <div class="card-header space-between flex-align">
+                        <div class="flex-align">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <h2>X (Twitter Clone)</h2>
+                        </div>
+                        <span class="project-badge">Tailwind CSS</span>
+                    </div>
+
+                    <p class="project-desc mt-3">
+                        Pixel-perfect frontend recreation of Twitter / X web UI using utility-first Tailwind CSS. Replicated complex multi-column responsive feeds, widgets, and sidebars.
+                    </p>
+
+                    <ul class="project-features">
+                        <li><i class="fa-solid fa-check"></i> Precision responsiveness across desktop, tablet, and mobile breakpoints.</li>
+                        <li><i class="fa-solid fa-check"></i> Component-driven layout replicating trending feeds, modals, and sticky navbars.</li>
+                    </ul>
+
+                    <div class="project-actions">
+                        <a href="https://twitter-red.vercel.app/" target="_blank" class="card-btn card-btn-primary">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Hrishi9o/Twitter" target="_blank" class="card-btn card-btn-secondary">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+
+                    <div class="card-footer mt-auto pt-4">
+                        <div class="tags">
+                            <span class="tag tech-tag">Tailwind CSS</span>
+                            <span class="tag tech-tag">HTML5</span>
+                            <span class="tag tech-tag">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MILESTONES & HONORS (2 COLS) -->
+            <div class="bento-card col-span-2 reveal" data-tilt>
+                <div class="card-inner flex-col flex-grow">
+                    <div class="card-header space-between">
+                        <div class="flex-align"><i class="fa-solid fa-trophy icon-primary"></i><h2>Milestones & Honors</h2></div>
+                        <span class="project-badge production"><i class="fa-solid fa-star"></i> Verified Track Record</span>
+                    </div>
+                    <div class="list-layout mt-4 stagger-group" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
+                        <div class="list-item stagger-item border-l-blue">
+                            <i class="fa-solid fa-robot text-blue"></i>
+                            <p><strong>Finalist</strong> - BLACKBOX AI: Trick The System at RIT TechFest 2026 for building intelligent workflow solutions.</p>
+                        </div>
+                        <div class="list-item stagger-item border-l-green">
+                            <i class="fa-solid fa-chart-line text-green"></i>
+                            <p><strong>9.65 CGPA</strong> - Top Academic Performer in the Information Science & Engineering cohort at RIT.</p>
+                        </div>
+                        <div class="list-item stagger-item border-l-purple">
+                            <i class="fa-solid fa-cubes text-purple"></i>
+                            <p><strong>Production Launch</strong> - Engineered and deployed Yashodhar Enterprises Aquajaal POS for live water distribution.</p>
+                        </div>
+                        <div class="list-item stagger-item border-l-blue">
+                            <i class="fa-solid fa-medal text-blue"></i>
+                            <p><strong>97.3% Aggregate</strong> - State Distinction in Pre-University Examination (Class XII PCMB).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERSONA & INTERESTS (1 COL) -->
             <div class="bento-card col-span-1 reveal" data-tilt>
                 <div class="card-inner flex-col flex-grow">
                     <div class="card-header space-between">
-                        <div class="flex-align"><i class="fa-solid fa-globe icon-primary"></i><h2>Persona</h2></div>
+                        <div class="flex-align"><i class="fa-solid fa-user-astronaut icon-primary"></i><h2>Persona</h2></div>
                     </div>
                     <div class="mt-4 stagger-group flex-col flex-grow space-between">
                         <div class="stagger-item">
-                            <p class="skill-label mb-2">Languages</p>
+                            <p class="skill-label mb-2">Languages Spoken</p>
                             <div class="tags">
-                                <span class="tag">English</span>
+                                <span class="tag">English (Proficient)</span>
                                 <span class="tag">Hindi</span>
                                 <span class="tag">Kannada</span>
-                                <span class="tag">Tulu</span>
+                                <span class="tag">Tulu (Native)</span>
                             </div>
                         </div>
                         <div class="stagger-item mt-4">
-                            <p class="skill-label mb-2">Interests</p>
+                            <p class="skill-label mb-2">Core Passions</p>
                             <div class="tags">
-                                <span class="tag">Web Architecture</span>
+                                <span class="tag">Distributed Systems</span>
+                                <span class="tag">Offline-First Tech</span>
                                 <span class="tag">UI/UX Design</span>
-                                <span class="tag">Travel & Biking</span>
+                                <span class="tag">Marching Band Vocalist</span>
+                                <span class="tag">Biking & Travel</span>
                             </div>
                         </div>
                     </div>
@@ -233,7 +451,7 @@
     </main>
 
     <footer>
-        <p>© 2026 Hrishikesh S Shetty. Engineered with precision & motion.</p>
+        <p>© 2026 Hrishikesh S Shetty. Engineered with precision & motion. • <a href="https://github.com/Hrishi9o" target="_blank">github.com/Hrishi9o</a></p>
     </footer>
 
     <script src="script.js"></script>
