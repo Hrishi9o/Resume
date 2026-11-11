@@ -356,7 +356,7 @@ function handleTermCommand(cmd) {
         case 'projects':
             printTermLine('1. ☕ <strong>Get-Me-Chai:</strong> Creator Crowdfunding Platform (Next.js 14, Razorpay HMAC, MongoDB Atlas, NextAuth).');
             printTermLine('   Live: <a href="https://get-me-chai-tawny-five.vercel.app/" target="_blank" style="color: var(--primary);">https://get-me-chai-tawny-five.vercel.app/</a>');
-            printTermLine('2. 🛡️ <strong>SurakshaSetu:</strong> Digital Identity & Trust Management System (Java, 15-Table Normalized PostgreSQL, JDBC, Multithreading, RBAC).');
+            printTermLine('2. 🛡️ <strong>SurakshaSetu:</strong> Digital Identity & Trust Management System (Java, PostgreSQL, JDBC, Multithreading, RBAC).');
             printTermLine('   Docs: Verified on ATS Resume PDF & GitHub (<a href="Hrishi.pdf" target="_blank" style="color: var(--primary);">Hrishi.pdf</a>)');
             printTermLine('3. 🎵 <strong>Spotify Clone:</strong> Web Audio streaming player with seekbar scrubbing & queue management.');
             printTermLine('   Live: <a href="https://spotify-pi-six-14.vercel.app/" target="_blank" style="color: var(--primary);">https://spotify-pi-six-14.vercel.app/</a>');
@@ -367,7 +367,7 @@ function handleTermCommand(cmd) {
         case 'skills':
             printTermLine('💻 <strong>Languages:</strong> Java, JavaScript (ES6+), TypeScript, C/C++, SQL, HTML5, CSS3');
             printTermLine('🌐 <strong>Frameworks:</strong> Next.js 14, React.js 18, Node.js, Express.js, Java Swing GUI, Tailwind CSS');
-            printTermLine('🗄️ <strong>Databases & Systems:</strong> PostgreSQL (15-table 3NF), MongoDB Atlas, Mongoose, JDBC, ACID Transactions');
+            printTermLine('🗄️ <strong>Databases & Systems:</strong> PostgreSQL, MongoDB Atlas, MySQL, JDBC, Relational Design');
             printTermLine('🔐 <strong>Tools & Security:</strong> Razorpay API, NextAuth.js (OAuth 2.0), RBAC, Rolling-Hash Security, Multithreading, Git & GitHub');
             break;
 

@@ -7,7 +7,7 @@
   <p>
     <b>Digital Engineer & Information Science Undergrad @ Ramaiah Institute of Technology (9.53 CGPA)</b><br>
     <b>CPP2 Engineering Intern @ Hewlett Packard Enterprise (HPE)</b><br>
-    Featuring <b>Get-Me-Chai</b> (Next.js 14 SaaS) & <b>SurakshaSetu</b> (Enterprise Java & 15-Table PostgreSQL).
+    Featuring <b>Get-Me-Chai</b> (Next.js 14 SaaS) & <b>SurakshaSetu</b> (Java & PostgreSQL).
   </p>
 
   <p>
@@ -47,14 +47,14 @@
 
 ---
 
-## 🛡️ Enterprise Systems Spotlight: SurakshaSetu
+## 🛡️ Systems Project Spotlight: SurakshaSetu
 
-**SurakshaSetu** is an enterprise-grade digital identity and trust management platform engineered for gig economy ecosystems, powered by a 15-table normalized PostgreSQL database and an atomic multi-threaded Java application.
+**SurakshaSetu** is a digital identity and trust management platform engineered for gig economy workers, powered by a normalized PostgreSQL database and a multi-threaded Java application.
 
-* **Tech Stack:** Java, PostgreSQL, JDBC, Swing, Multithreading, Relational Architecture (3NF).
-* **Data Integrity:** 15-table normalized schema with strict foreign key constraints, indexes, and atomic transaction boundaries maintaining 100% ACID integrity across concurrent transactions.
-* **Algorithmic Trust Scoring:** Formulated a proprietary multi-variable mathematical algorithm factoring consistency, ratings, and income stability with comprehensive audit trails.
-* **Security & Concurrency:** Multi-threaded execution model featuring Role-Based Access Control (RBAC) and lightweight rolling-hash cryptographic security without external dependencies.
+* **Tech Stack:** Java, PostgreSQL, JDBC, Swing, Multithreading, Relational Architecture.
+* **Data Integrity:** Normalized relational schema with strict foreign key constraints, indexes, and atomic transaction boundaries maintaining data consistency.
+* **Algorithmic Trust Scoring:** Formulated a multi-variable rating algorithm factoring consistency, ratings, and income stability with audit trails.
+* **Security & Concurrency:** Multi-threaded execution model featuring Role-Based Access Control (RBAC) and rolling-hash cryptographic verification.
 
 ---
 
@@ -76,8 +76,8 @@
 Creator crowdfunding & patronage web application built with Next.js 14, Razorpay API, MongoDB Atlas, and NextAuth.js.
 * **Links:** [🚀 Live Web App](https://get-me-chai-tawny-five.vercel.app/) • [📁 Source Code](https://github.com/Hrishi9o/Get-Me-Chai)
 
-### 2. 🛡️ SurakshaSetu *(Enterprise Identity & Trust Architecture)*
-Digital identity & trust score management system built with Java, 15-table normalized PostgreSQL, JDBC, Multithreading, and custom rolling-hash security.
+### 2. 🛡️ SurakshaSetu *(Digital Identity & Trust Management)*
+Digital identity & trust score management system built with Java, normalized PostgreSQL, JDBC, Multithreading, and role-based access control.
 * **Details:** Verified on [Resume PDF](Hrishi.pdf) • [GitHub Profile](https://github.com/Hrishi9o)
 
 ### 3. 🎵 [Spotify Web Player](https://github.com/Hrishi9o/Spotify) *(Web Audio Platform)*
@@ -96,7 +96,7 @@ Pixel-perfect frontend recreation of Twitter / X web UI built with utility-first
 | :--- | :--- |
 | **Languages** | Java, JavaScript (ES6+), TypeScript, C / C++, SQL, HTML5, CSS3 |
 | **Frameworks & UI** | Next.js 14, React.js 18, Node.js, Express.js, Java Swing GUI, Tailwind CSS, Web Audio API, Canvas API |
-| **Databases & Systems** | PostgreSQL (Relational 3NF), MongoDB Atlas, Mongoose ORM, JDBC, MySQL, ACID Transactions, Firebase RTDB |
+| **Databases & Systems** | PostgreSQL, MongoDB Atlas, Mongoose ORM, JDBC, MySQL, Relational Database Design, Firebase RTDB |
 | **Security & CS Core** | Razorpay Payment Gateway, NextAuth.js (OAuth 2.0), RBAC Architecture, Rolling-Hash Security, Multithreading & Concurrency, DSA, OOP, DBMS, Git & GitHub |
 
 ---

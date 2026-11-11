@@ -161,7 +161,7 @@ function generateResumePDF(outputPath) {
     }
 
     renderSkillRow('Languages', 'Java, C, C++, JavaScript (ES6+), TypeScript, SQL, HTML5, CSS3');
-    renderSkillRow('Databases & Systems', 'PostgreSQL (15-Table 3NF), MongoDB Atlas, MySQL, Relational Database Design');
+    renderSkillRow('Databases & Systems', 'PostgreSQL, MongoDB Atlas, MySQL, Relational Database Design');
     renderSkillRow('Frameworks & Tools', 'Next.js 14, React.js 18, Node.js, Express.js, Java Swing, JDBC, Tailwind CSS, Git, GitHub');
     renderSkillRow('CS Fundamentals', 'Data Structures & Algorithms, DBMS, Object-Oriented Programming, Multithreading');
 
@@ -199,7 +199,7 @@ function generateResumePDF(outputPath) {
         'Java, PostgreSQL, JDBC, Swing, Multithreading',
         []
     );
-    renderBullet('Designed an academic digital identity and trust management platform for gig workers utilizing a 15-table normalized PostgreSQL database with foreign keys maintaining data integrity.');
+    renderBullet('Designed a digital identity and trust management platform for gig workers utilizing a normalized PostgreSQL relational database with foreign key constraints.');
     renderBullet('Implemented a multi-factor rating algorithm to compute worker trust scores based on client feedback, job completion rates, and transaction history with audit logs.');
     renderBullet('Developed a Java Swing desktop interface with JDBC and PreparedStatements for secure CRUD operations, worker profile management, and role-based access control.');
 
