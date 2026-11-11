@@ -2,11 +2,12 @@
 
 <div align="center">
 
-  <h1>☕ Interactive Portfolio & ATS-Optimized Resume</h1>
+  <h1>⚡ Interactive Portfolio & ATS-Optimized Resume</h1>
 
   <p>
-    <b>Full-Stack Software Engineer & Information Science Undergrad @ Ramaiah Institute of Technology</b><br>
-    Featuring <b>Get-Me-Chai</b> (Next.js 14 SaaS), <b>Aquajaal POS</b> (Flutter Offline-First), and an interactive developer experience.
+    <b>Digital Engineer & Information Science Undergrad @ Ramaiah Institute of Technology (9.65 CGPA)</b><br>
+    <b>CPP2 Engineering Intern @ Hewlett Packard Enterprise (HPE)</b><br>
+    Featuring <b>Get-Me-Chai</b> (Next.js 14 SaaS) & <b>SurakshaSetu</b> (Enterprise Java & 15-Table PostgreSQL).
   </p>
 
   <p>
@@ -37,48 +38,53 @@
 
 ## 🌟 Flagship Spotlight: [Get-Me-Chai](https://github.com/Hrishi9o/Get-Me-Chai)
 
-**Get-Me-Chai** is a full-stack creator patronage and micro-donations web platform empowering supporters to fund creators via secure digital payments and custom cheers.
+**Get-Me-Chai** is a full-stack creator patronage and micro-donations web platform empowering digital supporters to fund creators via secure payments and personalized messages.
 
 * **Tech Stack:** Next.js 14 App Router, React 18, Razorpay Payment Gateway, MongoDB Atlas, Mongoose, NextAuth.js (OAuth 2.0), Tailwind CSS.
-* **Fintech Security:** Server-to-server order creation with SHA256 HMAC cryptographic checksum verification preventing client-side payment manipulation or fraud.
-* **Interactive Sandbox:** The portfolio website includes an **interactive in-browser Chai donation simulator** with real-time supporter feed updates, celebratory multi-colored confetti physics, and synthesized audio chimes.
+* **Fintech Security:** Server-to-server order creation with HMAC-SHA256 signature verification preventing client-side payment manipulation or fraudulent checkouts.
+* **Dynamic Creator Portals:** Instant transaction ledgers, real-time patron comments, dynamic leaderboards, and celebratory confetti animations.
 * **Direct Links:** [🚀 Launch Live Web App](https://get-me-chai-tawny-five.vercel.app/) • [📁 GitHub Repository](https://github.com/Hrishi9o/Get-Me-Chai)
+
+---
+
+## 🛡️ Enterprise Systems Spotlight: SurakshaSetu
+
+**SurakshaSetu** is an enterprise-grade digital identity and trust management platform engineered for gig economy ecosystems, powered by a 15-table normalized PostgreSQL database and an atomic multi-threaded Java application.
+
+* **Tech Stack:** Java, PostgreSQL, JDBC, Swing, Multithreading, Relational Architecture (3NF).
+* **Data Integrity:** 15-table normalized schema with strict foreign key constraints, indexes, and atomic transaction boundaries maintaining 100% ACID integrity across concurrent transactions.
+* **Algorithmic Trust Scoring:** Formulated a proprietary multi-variable mathematical algorithm factoring consistency, ratings, and income stability with comprehensive audit trails.
+* **Security & Concurrency:** Multi-threaded execution model featuring Role-Based Access Control (RBAC) and lightweight rolling-hash cryptographic security without external dependencies.
 
 ---
 
 ## ✨ Portfolio Architecture & High-Impact Effects
 
-* **☕ Warm Chai Glassmorphism & Cyber Aesthetics:** Ambient glowing gradients, frosted glass backdrops (`backdrop-filter: blur(20px)`), and modern typographic scales.
-* **🎯 Interactive Chai Donation Sandbox:** In-browser simulator testing the Get-Me-Chai patronage loop with live supporter feed updates.
-* **🎉 Built-In Canvas Confetti Cannon:** Zero-dependency procedural particle engine blasting multi-colored confetti across the viewport on donation.
-* **🔊 Synthesized Web Audio API FX:** Subtle harmonic celebration chimes and haptic clicks rendered via native browser audio oscillators (with mute toggle).
-* **💻 Interactive Developer CLI Terminal (`guest@hrishi:~$`):** Fully functional in-browser terminal supporting commands (`help`, `chai`, `projects`, `skills`, `contact`, `resume`, `theme`, `clear`, `sudo`).
-* **🌌 Constellation Particle Physics:** Interactive background canvas rendering animated floating nodes and dynamic distance-based connecting vectors that respond to cursor proximity.
-* **✨ 3D Tilt & Specular Spotlight:** Real-time GPU-accelerated mouse tracking providing 3D perspective shifts and radial spotlight highlights.
-* **🌓 Dual Visual Theme:** Instant transition between cyber dark mode and pearl light mode with persistent user preference storage.
-* **📄 ATS-Optimized Single-Page PDF Generation:** Integrated Node.js compiler (`generate_resume_pdf.js`) using `pdfkit` that produces a vector-sharp, 1-page ATS-compliant PDF with embedded hyperlinks.
+* **💎 Cyber Obsidian & Glassmorphism:** Ambient glowing radial gradients, frosted glass backdrops (`backdrop-filter: blur(24px)`), and modern typographic scales.
+* **🔊 Procedural Web Audio API FX:** Subtle harmonic celebration chimes and haptic clicks rendered via native browser audio oscillators (with mute toggle).
+* **💻 Interactive Developer CLI Terminal (`guest@hrishi:~$`):** Fully functional in-browser terminal supporting commands (`help`, `about`, `experience`, `projects`, `skills`, `education`, `contact`, `resume`, `theme`, `clear`, `sudo`).
+* **🌌 Constellation Particle Canvas:** Dynamic background canvas rendering animated floating nodes and distance-based connecting vectors that respond to cursor proximity.
+* **✨ 3D Perspective Card Tilt:** Real-time GPU-accelerated mouse tracking providing 3D perspective shifts and specular lighting.
+* **🌓 Dual Visual Theme:** Instant transition between cyber dark mode and pearl light mode with persistent local preference storage.
+* **📄 ATS-Optimized Single-Page PDF Generation:** Integrated Node.js compiler (`generate_resume_pdf.js`) using `pdfkit` producing a vector-sharp, 1-page ATS-compliant PDF with embedded hyperlinks.
 
 ---
 
-## 💻 Ecosystem Projects
+## 💻 Flagship Projects
 
-### 1. ☕ [Get-Me-Chai](https://github.com/Hrishi9o/Get-Me-Chai) *(Primary Flagship SaaS)*
-Creator crowdfunding & patronage web application built with Next.js 14, Razorpay, MongoDB Atlas, and NextAuth.js.
+### 1. ☕ [Get-Me-Chai](https://github.com/Hrishi9o/Get-Me-Chai) *(Full-Stack Crowdfunding SaaS)*
+Creator crowdfunding & patronage web application built with Next.js 14, Razorpay API, MongoDB Atlas, and NextAuth.js.
 * **Links:** [🚀 Live Web App](https://get-me-chai-tawny-five.vercel.app/) • [📁 Source Code](https://github.com/Hrishi9o/Get-Me-Chai)
 
-### 2. 💧 [Aquajaal POS](https://github.com/Hrishi9o/Aquajaal) *(Production Enterprise App)*
-Production-grade, offline-first Point of Sale (POS) and inventory tracker built for **Yashodhar Enterprises** (Packaged Drinking Water Distributor) with Flutter, Dart, Hive (NoSQL), and Firebase RTDB.
-* **Links:** [🚀 Live Web Demo](https://aquajaal-hrishi9os-projects.vercel.app) • [📲 Download Android APK](https://github.com/Hrishi9o/Aquajaal/blob/main/Aquajaal-Counter-POS.apk) • [📁 Source Code](https://github.com/Hrishi9o/Aquajaal)
+### 2. 🛡️ SurakshaSetu *(Enterprise Identity & Trust Architecture)*
+Digital identity & trust score management system built with Java, 15-table normalized PostgreSQL, JDBC, Multithreading, and custom rolling-hash security.
+* **Details:** Verified on [Resume PDF](Hrishi.pdf) • [GitHub Profile](https://github.com/Hrishi9o)
 
-### 3. 📱 [Task Buddy](https://github.com/Hrishi9o/Todo_List) *(Mobile Suite)*
-Cross-platform mobile productivity engine with category organization, local database caching, secure OTP authentication, and dynamic theme switching with engagement mini-games.
-* **Links:** [📁 Source Code](https://github.com/Hrishi9o/Todo_List)
-
-### 4. 🎵 [Spotify Web Player](https://github.com/Hrishi9o/Spotify)
-Responsive music streaming web app replicating Spotify. Features real-time audio playback controls, seekbar scrubbing, volume modulation, dynamic playlists, and mobile dark mode.
+### 3. 🎵 [Spotify Web Player](https://github.com/Hrishi9o/Spotify) *(Web Audio Platform)*
+Responsive music streaming web app replicating Spotify. Features real-time audio playback controls, custom seekbar scrubbing math, volume modulation, dynamic playlists, and mobile dark mode.
 * **Links:** [🚀 Live Demo](https://spotify-pi-six-14.vercel.app/) • [📁 Source Code](https://github.com/Hrishi9o/Spotify)
 
-### 5. 🐦 [X / Twitter Clone](https://github.com/Hrishi9o/Twitter)
+### 4. 🐦 [X / Twitter Clone](https://github.com/Hrishi9o/Twitter) *(Responsive UI Architecture)*
 Pixel-perfect frontend recreation of Twitter / X web UI built with utility-first Tailwind CSS.
 * **Links:** [🚀 Live Demo](https://twitter-red.vercel.app/) • [📁 Source Code](https://github.com/Hrishi9o/Twitter)
 
@@ -88,10 +94,10 @@ Pixel-perfect frontend recreation of Twitter / X web UI built with utility-first
 
 | Domain | Technologies |
 | :--- | :--- |
-| **Full-Stack & Web** | Next.js 14, React.js 18, Node.js, Express.js, JavaScript (ES6+), TypeScript, Tailwind CSS, HTML5, CSS3, Canvas API |
-| **Mobile & Offline Systems** | Flutter, Dart, Hive (NoSQL), IndexedDB, Android Studio, PWA Architecture, Material 3 |
-| **Databases & Cloud** | MongoDB Atlas, Mongoose ORM, Firebase Realtime Database, MySQL, Vercel Edge, RESTful APIs |
-| **Fintech, Auth & CS Core** | Razorpay Payment Gateway, NextAuth.js (OAuth 2.0), Data Structures & Algorithms, OOP, DBMS, Git & GitHub |
+| **Languages** | Java, JavaScript (ES6+), TypeScript, C / C++, SQL, HTML5, CSS3 |
+| **Frameworks & UI** | Next.js 14, React.js 18, Node.js, Express.js, Java Swing GUI, Tailwind CSS, Web Audio API, Canvas API |
+| **Databases & Systems** | PostgreSQL (Relational 3NF), MongoDB Atlas, Mongoose ORM, JDBC, MySQL, ACID Transactions, Firebase RTDB |
+| **Security & CS Core** | Razorpay Payment Gateway, NextAuth.js (OAuth 2.0), RBAC Architecture, Rolling-Hash Security, Multithreading & Concurrency, DSA, OOP, DBMS, Git & GitHub |
 
 ---
 

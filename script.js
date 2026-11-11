@@ -329,38 +329,46 @@ function handleTermCommand(cmd) {
     switch (cmd) {
         case 'help':
             printTermLine('Available commands:');
-            printTermLine('  <span style="color: var(--primary);">about</span>     - Bio & academic standing at RIT');
-            printTermLine('  <span style="color: var(--primary);">projects</span>  - List all flagship projects and live URLs');
-            printTermLine('  <span style="color: var(--primary);">skills</span>    - Core technical competencies');
-            printTermLine('  <span style="color: var(--primary);">education</span> - Academic background & distinctions');
-            printTermLine('  <span style="color: var(--primary);">contact</span>   - Contact details & links');
-            printTermLine('  <span style="color: var(--primary);">resume</span>    - Open ATS-optimized resume PDF');
-            printTermLine('  <span style="color: var(--primary);">theme</span>     - Toggle dark/light theme');
-            printTermLine('  <span style="color: var(--primary);">clear</span>     - Clear terminal history');
-            printTermLine('  <span style="color: var(--primary);">sudo</span>      - Run superuser command');
+            printTermLine('  <span style="color: var(--primary);">about</span>      - Bio & academic standing at RIT');
+            printTermLine('  <span style="color: var(--primary);">experience</span> - Work history at HPE & hackathons');
+            printTermLine('  <span style="color: var(--primary);">projects</span>   - List all flagship projects and live URLs');
+            printTermLine('  <span style="color: var(--primary);">skills</span>     - Core technical competencies');
+            printTermLine('  <span style="color: var(--primary);">education</span>  - Academic background & distinctions');
+            printTermLine('  <span style="color: var(--primary);">contact</span>    - Contact details & links');
+            printTermLine('  <span style="color: var(--primary);">resume</span>     - Open ATS-optimized resume PDF');
+            printTermLine('  <span style="color: var(--primary);">theme</span>      - Toggle dark/light theme');
+            printTermLine('  <span style="color: var(--primary);">clear</span>      - Clear terminal history');
+            printTermLine('  <span style="color: var(--primary);">sudo</span>       - Run superuser command');
             break;
 
         case 'about':
-            printTermLine('🎓 <strong>Hrishikesh S Shetty:</strong> Information Science Engineering undergraduate at Ramaiah Institute of Technology, Bangalore.');
-            printTermLine('⭐ <strong>Academic Standing:</strong> 9.65 CGPA (Top Performer in ISE).');
-            printTermLine('🏆 <strong>Honors:</strong> Finalist in BLACKBOX AI Hackathon 2026.');
+            printTermLine('🎓 <strong>Hrishikesh S Shetty:</strong> Information Science Engineering undergraduate at Ramaiah Institute of Technology, Bangalore (9.65 CGPA) & Intern at Hewlett Packard Enterprise (HPE).');
+            printTermLine('⭐ <strong>Academic Standing:</strong> 9.65 CGPA (Top Performer in ISE @ RIT).');
+            printTermLine('🏆 <strong>Honors:</strong> Finalist in BLACKBOX AI Hackathon 2026, Google x DeepStation Hackathon participant.');
+            break;
+
+        case 'experience':
+            printTermLine('💼 <strong>Hewlett Packard Enterprise (HPE):</strong> CPP2 Intern (July 2026 – Present, Bangalore) — Enterprise SDLC & edge-to-cloud architecture.');
+            printTermLine('🚀 <strong>Google x DeepStation Hackathon:</strong> May 2026 — Dept. of CSE (AI&ML / Cyber Security) @ MSRIT.');
+            printTermLine('🏆 <strong>BLACKBOX AI Hackathon:</strong> Finalist at RIT TechFest 2026.');
             break;
 
         case 'projects':
-            printTermLine('1. ☕ <strong>Get-Me-Chai:</strong> Creator Crowdfunding Platform (Next.js 14, Razorpay HMAC, MongoDB, NextAuth).');
+            printTermLine('1. ☕ <strong>Get-Me-Chai:</strong> Creator Crowdfunding Platform (Next.js 14, Razorpay HMAC, MongoDB Atlas, NextAuth).');
             printTermLine('   Live: <a href="https://get-me-chai-tawny-five.vercel.app/" target="_blank" style="color: var(--primary);">https://get-me-chai-tawny-five.vercel.app/</a>');
-            printTermLine('2. 💧 <strong>Aquajaal POS:</strong> Production water distribution POS & inventory tracker (Flutter, Hive, Firebase RTDB).');
-            printTermLine('   Live: <a href="https://aquajaal-hrishi9os-projects.vercel.app" target="_blank" style="color: var(--primary);">https://aquajaal-hrishi9os-projects.vercel.app</a>');
-            printTermLine('3. 📱 <strong>Task Buddy:</strong> Mobile productivity suite with OTP auth & gamification.');
-            printTermLine('4. 🎵 <strong>Spotify Clone:</strong> Web Audio streaming player in Vanilla JS.');
-            printTermLine('5. 🐦 <strong>Twitter Clone:</strong> Pixel-perfect responsive Tailwind UI.');
+            printTermLine('2. 🛡️ <strong>SurakshaSetu:</strong> Digital Identity & Trust Management System (Java, 15-Table Normalized PostgreSQL, JDBC, Multithreading, RBAC).');
+            printTermLine('   Docs: Verified on ATS Resume PDF & GitHub (<a href="Hrishi.pdf" target="_blank" style="color: var(--primary);">Hrishi.pdf</a>)');
+            printTermLine('3. 🎵 <strong>Spotify Clone:</strong> Web Audio streaming player with seekbar scrubbing & queue management.');
+            printTermLine('   Live: <a href="https://spotify-pi-six-14.vercel.app/" target="_blank" style="color: var(--primary);">https://spotify-pi-six-14.vercel.app/</a>');
+            printTermLine('4. 🐦 <strong>Twitter Clone:</strong> Pixel-perfect responsive Tailwind UI.');
+            printTermLine('   Live: <a href="https://twitter-red.vercel.app/" target="_blank" style="color: var(--primary);">https://twitter-red.vercel.app/</a>');
             break;
 
         case 'skills':
-            printTermLine('💻 <strong>Frontend:</strong> Next.js 14, React.js 18, Flutter, Tailwind CSS, JavaScript (ES6+), Dart');
-            printTermLine('🗄️ <strong>Backend:</strong> Node.js, Express, MongoDB Atlas, Mongoose, Hive NoSQL, Firebase RTDB');
-            printTermLine('💳 <strong>APIs & Auth:</strong> Razorpay Payment Gateway, NextAuth.js (OAuth 2.0)');
-            printTermLine('🎓 <strong>CS Core:</strong> DSA, OOP, DBMS, SQL, C/C++, Java (9.65 CGPA @ RIT)');
+            printTermLine('💻 <strong>Languages:</strong> Java, JavaScript (ES6+), TypeScript, C/C++, SQL, HTML5, CSS3');
+            printTermLine('🌐 <strong>Frameworks:</strong> Next.js 14, React.js 18, Node.js, Express.js, Java Swing GUI, Tailwind CSS');
+            printTermLine('🗄️ <strong>Databases & Systems:</strong> PostgreSQL (15-table 3NF), MongoDB Atlas, Mongoose, JDBC, ACID Transactions');
+            printTermLine('🔐 <strong>Tools & Security:</strong> Razorpay API, NextAuth.js (OAuth 2.0), RBAC, Rolling-Hash Security, Multithreading, Git & GitHub');
             break;
 
         case 'education':
