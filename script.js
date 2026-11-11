@@ -342,8 +342,8 @@ function handleTermCommand(cmd) {
             break;
 
         case 'about':
-            printTermLine('🎓 <strong>Hrishikesh S Shetty:</strong> Information Science Engineering undergraduate at Ramaiah Institute of Technology, Bangalore (9.65 CGPA) & Intern at Hewlett Packard Enterprise (HPE).');
-            printTermLine('⭐ <strong>Academic Standing:</strong> 9.65 CGPA (Top Performer in ISE @ RIT).');
+            printTermLine('🎓 <strong>Hrishikesh S Shetty:</strong> Information Science Engineering undergraduate at Ramaiah Institute of Technology, Bangalore (9.53 CGPA) & Intern at Hewlett Packard Enterprise (HPE).');
+            printTermLine('⭐ <strong>Academic Standing:</strong> 9.53 CGPA (Top Performer in ISE @ RIT).');
             printTermLine('🏆 <strong>Honors:</strong> Finalist in BLACKBOX AI Hackathon 2026, Google x DeepStation Hackathon participant.');
             break;
 
@@ -372,7 +372,7 @@ function handleTermCommand(cmd) {
             break;
 
         case 'education':
-            printTermLine('🏫 <strong>Ramaiah Institute of Technology:</strong> B.E. in Information Science & Engg (2024–2028) | CGPA: 9.65');
+            printTermLine('🏫 <strong>Ramaiah Institute of Technology:</strong> B.E. in Information Science & Engg (2024–2028) | CGPA: 9.53');
             printTermLine('🏫 <strong>Jnana Sudha PU College:</strong> Class XII PCMB (2022–2024) | Aggregate: 97.3%');
             printTermLine('🏫 <strong>Don Bosco School:</strong> Class X (2022) | Aggregate: 90.67%');
             break;

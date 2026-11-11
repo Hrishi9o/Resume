@@ -5,7 +5,7 @@
   <h1>⚡ Interactive Portfolio & ATS-Optimized Resume</h1>
 
   <p>
-    <b>Digital Engineer & Information Science Undergrad @ Ramaiah Institute of Technology (9.65 CGPA)</b><br>
+    <b>Digital Engineer & Information Science Undergrad @ Ramaiah Institute of Technology (9.53 CGPA)</b><br>
     <b>CPP2 Engineering Intern @ Hewlett Packard Enterprise (HPE)</b><br>
     Featuring <b>Get-Me-Chai</b> (Next.js 14 SaaS) & <b>SurakshaSetu</b> (Enterprise Java & 15-Table PostgreSQL).
   </p>
