@@ -172,13 +172,35 @@ function generateResumePDF(outputPath) {
 
     function renderProjectHeader(title, techStack, links) {
         const y = doc.y;
-        doc.font('Times-Bold').fontSize(9.3).fillColor(primaryColor).text(title, left, y, { continued: true });
-        doc.font('Times-Italic').fontSize(8.9).fillColor(mutedColor).text(' | ' + techStack, { continued: false });
+
+        // Render interactive clickable hyperlinks on the right margin
+        let linksWidth = 0;
+        const sep = ' | ';
+        doc.font('Times-Roman').fontSize(8.8);
+        const sepWidth = doc.widthOfString(sep);
 
         if (links && links.length > 0) {
-            let linkStr = links.map(l => l.label).join(' | ');
-            doc.font('Times-Roman').fontSize(8.8).fillColor(linkColor).text(linkStr, right - 100, y, { width: 100, align: 'right' });
+            const linkWidths = links.map(l => doc.widthOfString(l.label));
+            linksWidth = linkWidths.reduce((a, b) => a + b, 0) + sepWidth * (links.length - 1);
+            let curX = right - linksWidth;
+
+            for (let i = 0; i < links.length; i++) {
+                doc.font('Times-Roman').fontSize(8.8).fillColor(linkColor)
+                   .text(links[i].label, curX, y, { link: links[i].url, underline: true });
+                curX += linkWidths[i];
+                if (i < links.length - 1) {
+                    doc.font('Times-Roman').fontSize(8.8).fillColor(mutedColor)
+                       .text(sep, curX, y, { underline: false });
+                    curX += sepWidth;
+                }
+            }
         }
+
+        // Render project title and tech stack on the left
+        const maxTitleWidth = contentWidth - (linksWidth > 0 ? linksWidth + 12 : 0);
+        doc.font('Times-Bold').fontSize(9.3).fillColor(primaryColor).text(title, left, y, { continued: true, width: maxTitleWidth });
+        doc.font('Times-Italic').fontSize(8.9).fillColor(mutedColor).text(' | ' + techStack, { continued: false, width: maxTitleWidth });
+
         doc.y = y + 12;
     }
 
@@ -251,9 +273,12 @@ function generateResumePDF(outputPath) {
 }
 
 const targetPath = path.join(__dirname, 'Hrishi.pdf');
+const altTargetPath = path.join(__dirname, 'Resume.pdf');
+
 generateResumePDF(targetPath)
     .then(() => {
-        console.log('Successfully re-generated Hrishi.pdf at:', targetPath);
+        fs.copyFileSync(targetPath, altTargetPath);
+        console.log('Successfully re-generated Hrishi.pdf and Resume.pdf with active clickable links!');
     })
     .catch(err => {
         console.error('Error generating PDF:', err);
