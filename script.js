@@ -373,8 +373,8 @@ function handleTermCommand(cmd) {
 
         case 'education':
             printTermLine('🏫 <strong>Ramaiah Institute of Technology:</strong> B.E. in Information Science & Engg (2024–2028) | CGPA: 9.53');
-            printTermLine('🏫 <strong>Jnana Sudha PU College:</strong> Class XII PCMB (2022–2024) | Aggregate: 97.3%');
-            printTermLine('🏫 <strong>Don Bosco School:</strong> Class X (2022) | Aggregate: 90.67%');
+            printTermLine('🏫 <strong>Jnana Sudha PU College:</strong> Class XII PCMB (2022–2024) | Aggregate: 97.83%');
+            printTermLine('🏫 <strong>Don Bosco School:</strong> Class X (2022) | Aggregate: 90.8%');
             break;
 
         case 'contact':

@@ -143,8 +143,8 @@ function generateResumePDF(outputPath) {
     }
 
     renderEduItem('Ramaiah Institute of Technology | B.E. Information Science (GPA: 9.53/10.0)', '2024 – 2028');
-    renderEduItem('Jnana Sudha PU College | Pre-University (Class XII - PCMB) (Aggregate: 97.3%)', '2022 – 2024');
-    renderEduItem('Don Bosco English Medium School | Secondary (Class X) (Aggregate: 90.67%)', '2022');
+    renderEduItem('Jnana Sudha PU College | Pre-University (Class XII - PCMB) (Aggregate: 97.83%)', '2022 – 2024');
+    renderEduItem('Don Bosco English Medium School | Secondary (Class X) (Aggregate: 90.8%)', '2022');
 
     // =========================================================================
     // 5. TECHNICAL SKILLS
@@ -199,9 +199,9 @@ function generateResumePDF(outputPath) {
         'Java, PostgreSQL, JDBC, Swing, Multithreading',
         []
     );
-    renderBullet('Architected a digital identity and trust management system for gig economy workers utilizing a 15-table normalized PostgreSQL database, maintaining 100% data integrity across concurrent transactions.');
-    renderBullet('Implemented a custom mathematical trust score algorithm factoring consistency, ratings, and income, persisting changes via atomic database transactions and comprehensive audit trails.');
-    renderBullet('Developed a multi-threaded GUI application featuring role-based access control (RBAC) and custom rolling-hash security without external libraries, minimizing application dependency overhead.');
+    renderBullet('Designed an academic digital identity and trust management platform for gig workers utilizing a 15-table normalized PostgreSQL database with foreign keys maintaining data integrity.');
+    renderBullet('Implemented a multi-factor rating algorithm to compute worker trust scores based on client feedback, job completion rates, and transaction history with audit logs.');
+    renderBullet('Developed a Java Swing desktop interface with JDBC and PreparedStatements for secure CRUD operations, worker profile management, and role-based access control.');
 
     doc.y += 2;
 
