@@ -106,7 +106,7 @@ function generateResumePDF(outputPath) {
        .fontSize(8.9)
        .fillColor(textColor)
        .text(
-           'Information Science Engineering undergraduate (9.53 CGPA) at Ramaiah Institute of Technology with a strong foundation in software development, system architecture, and full-stack engineering. Experienced in architecting high-impact web platforms with Next.js 14 and React, enterprise systems with Java, PostgreSQL, and JDBC, and secure payment integrations with Razorpay. Passionate about resilient systems and clean, scalable code.',
+           'Information Science Engineering undergraduate (9.53 CGPA) at Ramaiah Institute of Technology with strong expertise in full-stack engineering and Applied AI systems. Experienced in architecting production web platforms with Next.js 14 and React, autonomous AI assistants using Multi-Hypothesis HyDE, RAG, and Model Context Protocol (MCP), and secure payment workflows with Razorpay. Passionate about resilient systems and clean, scalable code.',
            left, doc.y, { align: 'justify', lineGap: 1.8, width: contentWidth }
        );
 
@@ -160,10 +160,10 @@ function generateResumePDF(outputPath) {
         doc.y = y + 12.5;
     }
 
-    renderSkillRow('Languages', 'Java, C, C++, JavaScript (ES6+), TypeScript, SQL, HTML5, CSS3');
-    renderSkillRow('Databases & Systems', 'PostgreSQL, MongoDB Atlas, MySQL, Relational Database Design');
-    renderSkillRow('Frameworks & Tools', 'Next.js 14, React.js 18, Node.js, Express.js, Java Swing, JDBC, Tailwind CSS, Git, GitHub');
-    renderSkillRow('CS Fundamentals', 'Data Structures & Algorithms, DBMS, Object-Oriented Programming, Multithreading');
+    renderSkillRow('Languages', 'Python, Java, C, C++, JavaScript (ES6+), TypeScript, SQL, HTML5, CSS3');
+    renderSkillRow('AI & Frameworks', 'FastAPI, Next.js 14, React 18, RAG, Multi-Hypothesis HyDE, Model Context Protocol (MCP), Node.js, Tailwind');
+    renderSkillRow('Databases & Tools', 'PostgreSQL, MongoDB Atlas, Vector Databases, Docker, Git, GitHub, RESTful APIs');
+    renderSkillRow('CS Fundamentals', 'Data Structures & Algorithms, DBMS, Object-Oriented Programming, System Design');
 
     // =========================================================================
     // 6. PROJECTS
@@ -215,15 +215,15 @@ function generateResumePDF(outputPath) {
 
     doc.y += 2;
 
-    // 2. SurakshaSetu
+    // 2. PolicySphere AI
     renderProjectHeader(
-        'SurakshaSetu',
-        'Java, PostgreSQL, JDBC, Swing, Multithreading',
-        []
+        'PolicySphere AI',
+        'Python, FastAPI, RAG, Multi-Hypothesis HyDE, RRF, Vector DB, MCP, Docker',
+        [{ label: 'GitHub', url: 'https://github.com/Hrishi9o/policysphere-ai' }]
     );
-    renderBullet('Designed a digital identity and trust management platform for gig workers utilizing a normalized PostgreSQL relational database with foreign key constraints.');
-    renderBullet('Implemented a multi-factor rating algorithm to compute worker trust scores based on client feedback, job completion rates, and transaction history with audit logs.');
-    renderBullet('Developed a Java Swing desktop interface with JDBC and PreparedStatements for secure CRUD operations, worker profile management, and role-based access control.');
+    renderBullet('Engineered an autonomous conversational policy discovery system for Dell Campus Recruitment Hackathon (MSRIT) translating informal student scenarios into precise institutional rule matches.');
+    renderBullet('Implemented Multi-Hypothesis HyDE (Hypothetical Document Embeddings) and Reciprocal Rank Fusion (RRF) with vector embeddings to maximize retrieval relevance and eliminate hallucinations.');
+    renderBullet('Integrated Model Context Protocol (MCP) server over JSON-RPC enabling external agent interoperability; containerized with Docker Compose for production deployment.');
 
     doc.y += 2;
 

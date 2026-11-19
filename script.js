@@ -356,8 +356,8 @@ function handleTermCommand(cmd) {
         case 'projects':
             printTermLine('1. ☕ <strong>Get-Me-Chai:</strong> Creator Crowdfunding Platform (Next.js 14, Razorpay HMAC, MongoDB Atlas, NextAuth).');
             printTermLine('   Live: <a href="https://get-me-chai-tawny-five.vercel.app/" target="_blank" style="color: var(--primary);">https://get-me-chai-tawny-five.vercel.app/</a>');
-            printTermLine('2. 🛡️ <strong>SurakshaSetu:</strong> Digital Identity & Trust Management System (Java, PostgreSQL, JDBC, Multithreading, RBAC).');
-            printTermLine('   Docs: Verified on ATS Resume PDF & GitHub (<a href="Hrishi.pdf" target="_blank" style="color: var(--primary);">Hrishi.pdf</a>)');
+            printTermLine('2. 🤖 <strong>PolicySphere AI:</strong> Campus Policy Discovery Assistant (Python, FastAPI, Multi-Hypothesis HyDE, RRF, MCP, Docker).');
+            printTermLine('   GitHub: <a href="https://github.com/Hrishi9o/policysphere-ai" target="_blank" style="color: var(--primary);">https://github.com/Hrishi9o/policysphere-ai</a>');
             printTermLine('3. 🎵 <strong>Spotify Clone:</strong> Web Audio streaming player with seekbar scrubbing & queue management.');
             printTermLine('   Live: <a href="https://spotify-pi-six-14.vercel.app/" target="_blank" style="color: var(--primary);">https://spotify-pi-six-14.vercel.app/</a>');
             printTermLine('4. 🐦 <strong>Twitter Clone:</strong> Pixel-perfect responsive Tailwind UI.');
@@ -365,10 +365,10 @@ function handleTermCommand(cmd) {
             break;
 
         case 'skills':
-            printTermLine('💻 <strong>Languages:</strong> Java, JavaScript (ES6+), TypeScript, C/C++, SQL, HTML5, CSS3');
-            printTermLine('🌐 <strong>Frameworks:</strong> Next.js 14, React.js 18, Node.js, Express.js, Java Swing GUI, Tailwind CSS');
-            printTermLine('🗄️ <strong>Databases & Systems:</strong> PostgreSQL, MongoDB Atlas, MySQL, JDBC, Relational Design');
-            printTermLine('🔐 <strong>Tools & Security:</strong> Razorpay API, NextAuth.js (OAuth 2.0), RBAC, Rolling-Hash Security, Multithreading, Git & GitHub');
+            printTermLine('💻 <strong>Languages:</strong> Python, Java, JavaScript (ES6+), TypeScript, C/C++, SQL, HTML5, CSS3');
+            printTermLine('🧠 <strong>AI & Frameworks:</strong> FastAPI, Next.js 14, React 18, Multi-Hypothesis HyDE, Model Context Protocol (MCP), RAG, Node.js, Tailwind');
+            printTermLine('🗄️ <strong>Databases & Cloud:</strong> PostgreSQL, MongoDB Atlas, Vector Databases, Docker Compose, MySQL, RESTful APIs');
+            printTermLine('🔐 <strong>Tools & CS Core:</strong> Razorpay API, NextAuth.js (OAuth 2.0), LLM Guardrails, DSA, OOP, DBMS, Git & GitHub');
             break;
 
         case 'education':

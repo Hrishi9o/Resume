@@ -7,7 +7,7 @@
   <p>
     <b>Digital Engineer & Information Science Undergrad @ Ramaiah Institute of Technology (9.53 CGPA)</b><br>
     <b>CPP2 Engineering Intern @ Hewlett Packard Enterprise (HPE)</b><br>
-    Featuring <b>Get-Me-Chai</b> (Next.js 14 SaaS) & <b>SurakshaSetu</b> (Java & PostgreSQL).
+    Featuring <b>Get-Me-Chai</b> (Next.js 14 SaaS) & <b>PolicySphere AI</b> (Applied AI & Multi-Hypothesis HyDE).
   </p>
 
   <p>
@@ -47,14 +47,14 @@
 
 ---
 
-## 🛡️ Systems Project Spotlight: SurakshaSetu
+## 🤖 Applied AI Spotlight: [PolicySphere™ AI](https://github.com/Hrishi9o/policysphere-ai)
 
-**SurakshaSetu** is a digital identity and trust management platform engineered for gig economy workers, powered by a normalized PostgreSQL database and a multi-threaded Java application.
+**PolicySphere™ AI** is an autonomous campus policy discovery assistant engineered for the **Dell Campus Recruitment Eliminative Hackathon Round @ MSRIT**. It translates informal student scenarios into exact institutional policy matches using Multi-Hypothesis HyDE, Reciprocal Rank Fusion (RRF), and the Model Context Protocol (MCP).
 
-* **Tech Stack:** Java, PostgreSQL, JDBC, Swing, Multithreading, Relational Architecture.
-* **Data Integrity:** Normalized relational schema with strict foreign key constraints, indexes, and atomic transaction boundaries maintaining data consistency.
-* **Algorithmic Trust Scoring:** Formulated a multi-variable rating algorithm factoring consistency, ratings, and income stability with audit trails.
-* **Security & Concurrency:** Multi-threaded execution model featuring Role-Based Access Control (RBAC) and rolling-hash cryptographic verification.
+* **Tech Stack:** Python 3.11, FastAPI, Multi-Hypothesis HyDE, RRF, Vector DB, Model Context Protocol (MCP), Docker Compose.
+* **HyDE & Retrieval:** Generates diverse hypothetical bureaucratic policy drafts via few-shot LLM prompting to bridge conversational student queries with formal rules, boosting search precision.
+* **MCP Integration:** Production-grade Model Context Protocol (MCP) server over JSON-RPC exposing standardized tools for autonomous AI agents and sidecars.
+* **Direct Links:** [📁 GitHub Repository](https://github.com/Hrishi9o/policysphere-ai)
 
 ---
 
@@ -76,9 +76,9 @@
 Creator crowdfunding & patronage web application built with Next.js 14, Razorpay API, MongoDB Atlas, and NextAuth.js.
 * **Links:** [🚀 Live Web App](https://get-me-chai-tawny-five.vercel.app/) • [📁 Source Code](https://github.com/Hrishi9o/Get-Me-Chai)
 
-### 2. 🛡️ SurakshaSetu *(Digital Identity & Trust Management)*
-Digital identity & trust score management system built with Java, normalized PostgreSQL, JDBC, Multithreading, and role-based access control.
-* **Details:** Verified on [Resume PDF](Hrishi.pdf) • [GitHub Profile](https://github.com/Hrishi9o)
+### 2. 🤖 [PolicySphere AI](https://github.com/Hrishi9o/policysphere-ai) *(Autonomous Campus Policy Discovery Assistant)*
+Conversational AI policy assistant built with Python, FastAPI, Multi-Hypothesis HyDE, RRF, and Model Context Protocol (MCP) for the Dell Hackathon.
+* **Links:** [📁 Source Code](https://github.com/Hrishi9o/policysphere-ai) • Verified on [Resume PDF](Hrishi.pdf)
 
 ### 3. 🎵 [Spotify Web Player](https://github.com/Hrishi9o/Spotify) *(Web Audio Platform)*
 Responsive music streaming web app replicating Spotify. Features real-time audio playback controls, custom seekbar scrubbing math, volume modulation, dynamic playlists, and mobile dark mode.
@@ -94,10 +94,10 @@ Pixel-perfect frontend recreation of Twitter / X web UI built with utility-first
 
 | Domain | Technologies |
 | :--- | :--- |
-| **Languages** | Java, JavaScript (ES6+), TypeScript, C / C++, SQL, HTML5, CSS3 |
-| **Frameworks & UI** | Next.js 14, React.js 18, Node.js, Express.js, Java Swing GUI, Tailwind CSS, Web Audio API, Canvas API |
-| **Databases & Systems** | PostgreSQL, MongoDB Atlas, Mongoose ORM, JDBC, MySQL, Relational Database Design, Firebase RTDB |
-| **Security & CS Core** | Razorpay Payment Gateway, NextAuth.js (OAuth 2.0), RBAC Architecture, Rolling-Hash Security, Multithreading & Concurrency, DSA, OOP, DBMS, Git & GitHub |
+| **Languages** | Python, Java, JavaScript (ES6+), TypeScript, C / C++, SQL, HTML5, CSS3 |
+| **AI, Frameworks & UI** | FastAPI, Next.js 14, React.js 18, Multi-Hypothesis HyDE, Model Context Protocol (MCP), RAG, Node.js, Tailwind CSS |
+| **Databases & Cloud** | PostgreSQL, MongoDB Atlas, Vector Databases, Docker Compose, MySQL, Mongoose ORM, RESTful APIs |
+| **Tools & CS Core** | Razorpay Payment Gateway, NextAuth.js (OAuth 2.0), LLM Guardrails, DSA, OOP, DBMS, Git & GitHub |
 
 ---
 
