@@ -94,7 +94,7 @@ Pixel-perfect frontend recreation of Twitter / X web UI built with utility-first
 
 | Domain | Technologies |
 | :--- | :--- |
-| **Languages** | Python, Java, JavaScript (ES6+), C / C++, SQL, HTML5, CSS3 |
+| **Languages** | C++, C, Java, Python, JavaScript (ES6+), SQL, HTML5, CSS3 |
 | **AI, Frameworks & UI** | FastAPI, Next.js 14, React.js 18, Multi-Hypothesis HyDE, Model Context Protocol (MCP), RAG, Node.js, Tailwind CSS |
 | **Databases & Cloud** | PostgreSQL, MongoDB Atlas, Vector Databases, Docker Compose, MySQL, Mongoose ORM, RESTful APIs |
 | **Tools & CS Core** | Razorpay Payment Gateway, NextAuth.js (OAuth 2.0), LLM Guardrails, DSA, OOP, DBMS, Git & GitHub |

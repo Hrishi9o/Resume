@@ -160,7 +160,7 @@ function generateResumePDF(outputPath) {
         doc.y = y + 12.5;
     }
 
-    renderSkillRow('Languages', 'Python, Java, C, C++, JavaScript (ES6+), SQL, HTML5, CSS3');
+    renderSkillRow('Languages', 'C++, C, Java, Python, JavaScript (ES6+), SQL, HTML5, CSS3');
     renderSkillRow('AI & Frameworks', 'FastAPI, Next.js 14, React 18, RAG, Multi-Hypothesis HyDE, Model Context Protocol (MCP), Node.js, Tailwind');
     renderSkillRow('Databases & Tools', 'PostgreSQL, MongoDB Atlas, Vector Databases, Docker, Git, GitHub, RESTful APIs');
     renderSkillRow('CS Fundamentals', 'Data Structures & Algorithms, DBMS, Object-Oriented Programming, System Design');
