@@ -2,76 +2,7 @@
 // HRISHIKESH S SHETTY — PORTFOLIO INTERACTIONS & ADVANCED EFFECTS
 // ==========================================================================
 
-// --- 1. PROCEDURAL SOUND FX (WEB AUDIO API) ---
-class SoundFX {
-    constructor() {
-        this.ctx = null;
-        this.isMuted = localStorage.getItem('sound_muted') === 'true';
-    }
-
-    init() {
-        if (!this.ctx && (window.AudioContext || window.webkitAudioContext)) {
-            const AudioCtx = window.AudioContext || window.webkitAudioContext;
-            this.ctx = new AudioCtx();
-        }
-    }
-
-    playClick() {
-        if (this.isMuted) return;
-        this.init();
-        if (!this.ctx) return;
-        if (this.ctx.state === 'suspended') this.ctx.resume();
-
-        const now = this.ctx.currentTime;
-        const osc = this.ctx.createOscillator();
-        const gain = this.ctx.createGain();
-        osc.type = 'triangle';
-        osc.frequency.setValueAtTime(600, now);
-        osc.frequency.exponentialRampToValueAtTime(200, now + 0.05);
-
-        gain.gain.setValueAtTime(0.04, now);
-        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
-
-        osc.connect(gain);
-        gain.connect(this.ctx.destination);
-        osc.start(now);
-        osc.stop(now + 0.06);
-    }
-
-    playChime() {
-        if (this.isMuted) return;
-        this.init();
-        if (!this.ctx) return;
-        if (this.ctx.state === 'suspended') this.ctx.resume();
-
-        const now = this.ctx.currentTime;
-        [1318.51, 1975.53].forEach((freq, idx) => {
-            const osc = this.ctx.createOscillator();
-            const gain = this.ctx.createGain();
-            osc.type = 'sine';
-            osc.frequency.setValueAtTime(freq, now + idx * 0.07);
-
-            gain.gain.setValueAtTime(0.08, now + idx * 0.07);
-            gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.07 + 0.35);
-
-            osc.connect(gain);
-            gain.connect(this.ctx.destination);
-
-            osc.start(now + idx * 0.07);
-            osc.stop(now + idx * 0.07 + 0.4);
-        });
-    }
-
-    toggleMute() {
-        this.isMuted = !this.isMuted;
-        localStorage.setItem('sound_muted', this.isMuted ? 'true' : 'false');
-        return !this.isMuted;
-    }
-}
-
-const sfx = new SoundFX();
-
-// --- 2. THEME ENGINE (DARK / LIGHT DUAL MODE) ---
+// --- 1. THEME ENGINE (DARK / LIGHT DUAL MODE) ---
 const themeBtn = document.getElementById('theme-toggle');
 const body = document.body;
 const themeIcon = themeBtn ? themeBtn.querySelector('i') : null;
@@ -84,7 +15,6 @@ if (savedTheme === 'light') {
 
 if (themeBtn) {
     themeBtn.addEventListener('click', () => {
-        sfx.playClick();
         if (body.classList.contains('dark-mode')) {
             body.classList.replace('dark-mode', 'light-mode');
             if (themeIcon) themeIcon.classList.replace('fa-moon', 'fa-sun');
@@ -97,49 +27,63 @@ if (themeBtn) {
     });
 }
 
-// Sound FX Mute Toggle
-const soundBtn = document.getElementById('sound-toggle');
-if (soundBtn) {
-    const soundIcon = soundBtn.querySelector('i');
-    if (sfx.isMuted && soundIcon) {
-        soundIcon.classList.replace('fa-volume-high', 'fa-volume-xmark');
-    }
-    soundBtn.addEventListener('click', () => {
-        const unmuted = sfx.toggleMute();
-        if (soundIcon) {
-            if (unmuted) {
-                soundIcon.classList.replace('fa-volume-xmark', 'fa-volume-high');
-                sfx.playClick();
-            } else {
-                soundIcon.classList.replace('fa-volume-high', 'fa-volume-xmark');
-            }
-        }
-    });
-}
-
 // Mobile Menu Toggle
 const mobileMenuBtn = document.getElementById('mobile-menu-toggle');
 const mobileDrawer = document.getElementById('mobile-drawer');
+const glassNav = document.querySelector('.glass-nav');
+
+function toggleMobileMenu(forceClose = false) {
+    if (!mobileDrawer || !glassNav) return;
+    const shouldOpen = forceClose ? false : !mobileDrawer.classList.contains('open');
+    
+    if (shouldOpen) {
+        mobileDrawer.classList.add('open');
+        glassNav.classList.add('menu-open');
+        if (mobileMenuBtn) {
+            const icon = mobileMenuBtn.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        }
+    } else {
+        mobileDrawer.classList.remove('open');
+        glassNav.classList.remove('menu-open');
+        if (mobileMenuBtn) {
+            const icon = mobileMenuBtn.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+    }
+}
+
 if (mobileMenuBtn && mobileDrawer) {
-    mobileMenuBtn.addEventListener('click', () => {
-        sfx.playClick();
-        mobileDrawer.classList.toggle('open');
+    mobileMenuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleMobileMenu();
     });
 
     document.querySelectorAll('.mobile-nav-link').forEach(link => {
         link.addEventListener('click', () => {
-            mobileDrawer.classList.remove('open');
+            toggleMobileMenu(true);
         });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (glassNav && !glassNav.contains(e.target)) {
+            toggleMobileMenu(true);
+        }
     });
 }
 
-// --- 3. PROJECT FILTER TABS ---
+// --- 2. PROJECT FILTER TABS ---
 const filterTabs = document.querySelectorAll('.filter-tab');
 const projectCards = document.querySelectorAll('.project-card, .featured-showcase-card');
 
 filterTabs.forEach(tab => {
     tab.addEventListener('click', () => {
-        sfx.playClick();
         filterTabs.forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
 
@@ -419,7 +363,6 @@ function escapeHTML(str) {
 
 // --- 7. COPY EMAIL CLIPBOARD HANDLER ---
 function copyEmail() {
-    sfx.playClick();
     const email = "hrishikeshshetty9o@gmail.com";
     navigator.clipboard.writeText(email).then(() => {
         const emailText = document.getElementById("email-text");
