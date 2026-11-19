@@ -309,7 +309,7 @@ function handleTermCommand(cmd) {
             break;
 
         case 'skills':
-            printTermLine('💻 <strong>Languages:</strong> Python, Java, JavaScript (ES6+), TypeScript, C/C++, SQL, HTML5, CSS3');
+            printTermLine('💻 <strong>Languages:</strong> Python, Java, JavaScript (ES6+), C/C++, SQL, HTML5, CSS3');
             printTermLine('🧠 <strong>AI & Frameworks:</strong> FastAPI, Next.js 14, React 18, Multi-Hypothesis HyDE, Model Context Protocol (MCP), RAG, Node.js, Tailwind');
             printTermLine('🗄️ <strong>Databases & Cloud:</strong> PostgreSQL, MongoDB Atlas, Vector Databases, Docker Compose, MySQL, RESTful APIs');
             printTermLine('🔐 <strong>Tools & CS Core:</strong> Razorpay API, NextAuth.js (OAuth 2.0), LLM Guardrails, DSA, OOP, DBMS, Git & GitHub');
